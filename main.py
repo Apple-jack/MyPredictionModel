@@ -5,15 +5,14 @@ from keras.layers.recurrent import LSTM
 from keras.models import *
 from my_lstm import My_LSTM
 
-def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1):
+def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_try = 0, best_error = np.inf):
     x = Input(shape=(ts, dim))
-    lstm = My_LSTM(32, input_shape=(ts, dim), return_sequences=True)(x)
+    lstm = LSTM(32, input_shape=(ts, dim), return_sequences=True)(x)
     # lstm = LSTM(32, return_sequences=True)(lstm)
     prediction = Dense(1)(lstm)
     model = Model(input=x, output=prediction)
     model.compile('rmsprop', 'mse')
 
-    best_error = np.inf
     best_accuracy = 0.0
 
     # args.nsnapshot denotes how many epochs per weight saving.
@@ -25,20 +24,22 @@ def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1):
             epochs=nsnapshot)
 
         num_iter = nsnapshot * (ii + 1)
-        model.save_weights('snapshots/lstm/weights_ts%d_iter_%d.hdf5' % (ts, num_iter),
-                           overwrite=True)
 
         predicted = model.predict(x_train)
         train_error = np.sum((predicted[:, -1, 0] - y_train[:, -1, 0]) ** 2) / predicted.shape[0]
 
-        print('%s training error %f' % (num_iter, train_error))
+        print('%s train error %f' % (num_iter, train_error))
+        print("train sample: %d" % predicted.shape[0])
 
         predicted = model.predict(x_val)
         val_error = np.sum((predicted[:, -1, 0] - y_val[:, -1, 0]) ** 2) / predicted.shape[0]
 
-        p1 = np.array(predicted).flatten()
-        p2 = np.array(y_val).flatten()
-        p3 = p1 * p2
+        y_predict = np.array(predicted).flatten()
+        y_real= np.array(y_val).flatten()
+        x_real = np.array(x_val).flatten()
+        delta_predict = y_predict - x_real
+        delta_real = y_real - x_real
+        p3 = delta_predict * delta_real
         count = 0
         for x in p3:
             if x > 0:
@@ -47,33 +48,36 @@ def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1):
 
         print('val error %f' % val_error)
         print('accuracy %.4f' % accuracy)
+        print("val sample: %d" % predicted.shape[0])
 
-        if (accuracy > best_accuracy):
+        if (val_error < best_error):
             best_error = val_error
             best_accuracy = accuracy
             best_iter = nsnapshot * (ii + 1)
-        np.savetxt('results/lstm/best_iter_ts_%d.txt' % ts, [best_iter, best_error], fmt='%.6f')
-        f = open('results/lstm/val_error_ts_%d.txt' % ts, 'a')
-        f.write('iter=%d, val_error=%.6f, accuracy=%.4f\n' % (num_iter, val_error, accuracy))
+            model.save_weights('snapshots/lstm/weights_ts%d_iter%d_try%d.hdf5' % (ts, num_iter, exp_try),
+                               overwrite=True)
+        np.savetxt('results/lstm/best_error_ts%d.txt' % ts, [best_iter, best_error, exp_try], fmt='%.6f')
+        f = open('results/lstm/val_error_ts%d.txt' % ts, 'a')
+        f.write('try=%d, iter=%d, val_error=%.6f, accuracy=%.4f\n' % (exp_try, num_iter, val_error, accuracy))
 
     print('best iteration %d' % best_iter)
     print('smallest error %f' % best_error)
     print('best accuracy %.4f' % best_accuracy)
+    return best_error
 
 if __name__ == "__main__":
+    np.set_printoptions(threshold=np.inf)
+
     src = "dataset/matrix_no_zero.npy"
+    # src = "dataset/data.npy"
     src_hs300 = "dataset/hs300.npy"
     data_cache = "cache"
     train_split = 0.8
     val_split = 0.9
+    trys = 50
 
-    X_target, Y_target, X_pos, Y_pos, X_neg, Y_neg, max_data, min_data, X_hs300, Y_hs300 = build.build_data(src, src_hs300, data_cache, target=0, timesteps=15, k=20, related_ts=30)
+    # X_target, Y_target, X_pos, Y_pos, X_neg, Y_neg, max_data, min_data, X_hs300, Y_hs300 = build.build_data(src, src_hs300, data_cache, target=0, timesteps=15, k=20, related_ts=30)
     x_train, y_train, x_val, y_val, x_test, y_test, gt_test, max_data, min_data = build.load_data_2(src, src_hs300, 15, True)
-
-    print(X_target[0].flatten())
-    print('----------')
-    print(x_train[15].flatten())
-
     # # cache data
     # for i in range(20):
     #     print("start loading target: %d" % i)
@@ -99,5 +103,8 @@ if __name__ == "__main__":
     # X_val = X_target[train_border: val_border, :, :]
     # Y_val = Y_target[train_border: val_border, :]
     #
-    # exp_LSTM(100, 5, 15, X_train, Y_train, X_val, Y_val, dim=X_train.shape[2])
+    best_error = np.inf
+    for i in range(trys):
+        best_error = exp_LSTM(niter=50, nsnapshot=1, ts=15, x_train=x_train, y_train=y_train, x_val=x_val, y_val=y_val,
+                             dim=x_train.shape[2], exp_try=i, best_error=best_error)
 
