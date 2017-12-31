@@ -1,0 +1,2207 @@
+iter=5, val_error=0.320252
+iter=10, val_error=0.174226
+iter=15, val_error=0.087021
+iter=20, val_error=0.056948
+iter=25, val_error=0.046956
+iter=30, val_error=0.040260
+iter=35, val_error=0.034498
+iter=40, val_error=0.028596
+iter=45, val_error=0.024710
+iter=50, val_error=0.023557
+iter=55, val_error=0.019512
+iter=60, val_error=0.017865
+iter=65, val_error=0.015875
+iter=70, val_error=0.014919
+iter=75, val_error=0.015034
+iter=80, val_error=0.013957
+iter=85, val_error=0.014112
+iter=90, val_error=0.013273
+iter=95, val_error=0.013643
+iter=100, val_error=0.014115
+iter=5, val_error=0.306644
+iter=10, val_error=0.152972
+iter=15, val_error=0.080375
+iter=20, val_error=0.053256
+iter=25, val_error=0.041034
+iter=30, val_error=0.035058
+iter=35, val_error=0.029320
+iter=40, val_error=0.025140
+iter=45, val_error=0.021491
+iter=50, val_error=0.019224
+iter=55, val_error=0.017855
+iter=60, val_error=0.016120
+iter=65, val_error=0.016473
+iter=70, val_error=0.015976
+iter=75, val_error=0.014082
+iter=80, val_error=0.013428
+iter=85, val_error=0.013662
+iter=90, val_error=0.013083
+iter=95, val_error=0.012765
+iter=100, val_error=0.012844
+iter=105, val_error=0.013441
+iter=110, val_error=0.012557
+iter=115, val_error=0.014278
+iter=120, val_error=0.013198
+iter=125, val_error=0.013639
+iter=130, val_error=0.013229
+iter=135, val_error=0.012263
+iter=140, val_error=0.012882
+iter=145, val_error=0.013355
+iter=150, val_error=0.012847
+iter=155, val_error=0.013057
+iter=160, val_error=0.012491
+iter=165, val_error=0.012552
+iter=170, val_error=0.013223
+iter=175, val_error=0.012536
+iter=180, val_error=0.012738
+iter=185, val_error=0.012640
+iter=190, val_error=0.012676
+iter=195, val_error=0.013053
+iter=200, val_error=0.014102
+iter=205, val_error=0.013227
+iter=210, val_error=0.012907
+iter=215, val_error=0.012792
+iter=220, val_error=0.012705
+iter=225, val_error=0.012542
+iter=230, val_error=0.013405
+iter=235, val_error=0.012404
+iter=240, val_error=0.012715
+iter=245, val_error=0.012744
+iter=250, val_error=0.012860
+iter=255, val_error=0.012663
+iter=260, val_error=0.012806
+iter=265, val_error=0.012729
+iter=270, val_error=0.012651
+iter=275, val_error=0.013701
+iter=280, val_error=0.013025
+iter=285, val_error=0.013143
+iter=290, val_error=0.012726
+iter=295, val_error=0.012603
+iter=300, val_error=0.013351
+iter=305, val_error=0.012625
+iter=310, val_error=0.013031
+iter=315, val_error=0.013361
+iter=320, val_error=0.013083
+iter=325, val_error=0.013203
+iter=330, val_error=0.013466
+iter=335, val_error=0.012745
+iter=340, val_error=0.012811
+iter=345, val_error=0.013393
+iter=350, val_error=0.012732
+iter=355, val_error=0.014323
+iter=360, val_error=0.014245
+iter=365, val_error=0.013174
+iter=370, val_error=0.012975
+iter=375, val_error=0.013578
+iter=380, val_error=0.012979
+iter=385, val_error=0.013146
+iter=390, val_error=0.013048
+iter=395, val_error=0.012952
+iter=400, val_error=0.012976
+iter=405, val_error=0.013258
+iter=410, val_error=0.012823
+iter=415, val_error=0.013021
+iter=420, val_error=0.012832
+iter=425, val_error=0.012904
+iter=430, val_error=0.013182
+iter=435, val_error=0.013108
+iter=440, val_error=0.012833
+iter=445, val_error=0.013219
+iter=450, val_error=0.012855
+iter=455, val_error=0.012896
+iter=460, val_error=0.013329
+iter=465, val_error=0.013435
+iter=470, val_error=0.012863
+iter=475, val_error=0.013654
+iter=480, val_error=0.013414
+iter=485, val_error=0.013062
+iter=490, val_error=0.012837
+iter=495, val_error=0.013216
+iter=500, val_error=0.013270
+iter=505, val_error=0.013102
+iter=510, val_error=0.013041
+iter=515, val_error=0.013452
+iter=520, val_error=0.013644
+iter=525, val_error=0.012876
+iter=530, val_error=0.012877
+iter=535, val_error=0.012964
+iter=540, val_error=0.013016
+iter=545, val_error=0.013496
+iter=550, val_error=0.013357
+iter=555, val_error=0.013977
+iter=560, val_error=0.013141
+iter=565, val_error=0.012995
+iter=570, val_error=0.013939
+iter=575, val_error=0.012806
+iter=580, val_error=0.012994
+iter=585, val_error=0.012833
+iter=590, val_error=0.012853
+iter=595, val_error=0.012829
+iter=600, val_error=0.012922
+iter=605, val_error=0.012688
+iter=610, val_error=0.013234
+iter=615, val_error=0.012756
+iter=620, val_error=0.012769
+iter=625, val_error=0.012933
+iter=630, val_error=0.012847
+iter=635, val_error=0.012824
+iter=640, val_error=0.012836
+iter=645, val_error=0.012917
+iter=650, val_error=0.012751
+iter=655, val_error=0.012912
+iter=660, val_error=0.013504
+iter=665, val_error=0.012795
+iter=670, val_error=0.013830
+iter=675, val_error=0.012849
+iter=680, val_error=0.012878
+iter=685, val_error=0.012841
+iter=690, val_error=0.012803
+iter=695, val_error=0.012868
+iter=700, val_error=0.013424
+iter=705, val_error=0.014072
+iter=710, val_error=0.012833
+iter=715, val_error=0.012831
+iter=720, val_error=0.013414
+iter=725, val_error=0.013204
+iter=730, val_error=0.012815
+iter=735, val_error=0.012860
+iter=740, val_error=0.013755
+iter=745, val_error=0.014452
+iter=750, val_error=0.013046
+iter=755, val_error=0.012868
+iter=760, val_error=0.012860
+iter=765, val_error=0.012838
+iter=770, val_error=0.013073
+iter=775, val_error=0.012918
+iter=780, val_error=0.013193
+iter=785, val_error=0.012953
+iter=790, val_error=0.012749
+iter=795, val_error=0.012744
+iter=800, val_error=0.012799
+iter=805, val_error=0.012908
+iter=810, val_error=0.012582
+iter=815, val_error=0.012578
+iter=820, val_error=0.013555
+iter=825, val_error=0.012686
+iter=830, val_error=0.012807
+iter=835, val_error=0.012928
+iter=840, val_error=0.013030
+iter=845, val_error=0.013486
+iter=850, val_error=0.012822
+iter=855, val_error=0.012617
+iter=860, val_error=0.012597
+iter=865, val_error=0.013075
+iter=870, val_error=0.012741
+iter=875, val_error=0.012696
+iter=880, val_error=0.012700
+iter=885, val_error=0.013016
+iter=890, val_error=0.012911
+iter=895, val_error=0.012435
+iter=900, val_error=0.012774
+iter=905, val_error=0.012805
+iter=910, val_error=0.012773
+iter=915, val_error=0.012584
+iter=920, val_error=0.013017
+iter=925, val_error=0.012784
+iter=930, val_error=0.013066
+iter=935, val_error=0.012878
+iter=940, val_error=0.012681
+iter=945, val_error=0.012545
+iter=950, val_error=0.012403
+iter=955, val_error=0.012827
+iter=960, val_error=0.012799
+iter=965, val_error=0.012713
+iter=970, val_error=0.012556
+iter=975, val_error=0.012601
+iter=980, val_error=0.012477
+iter=985, val_error=0.012623
+iter=990, val_error=0.013043
+iter=995, val_error=0.012666
+iter=1000, val_error=0.012537
+iter=5, val_error=0.159251
+iter=10, val_error=0.079812
+iter=5, val_error=0.155931
+iter=10, val_error=0.103921
+iter=15, val_error=0.058484
+iter=20, val_error=0.045101
+iter=25, val_error=0.035414
+iter=30, val_error=0.031377
+iter=35, val_error=0.021882
+iter=40, val_error=0.018369
+iter=45, val_error=0.015342
+iter=50, val_error=0.017720
+iter=55, val_error=0.017427
+iter=60, val_error=0.018019
+iter=65, val_error=0.017175
+iter=70, val_error=0.019564
+iter=75, val_error=0.014310
+iter=80, val_error=0.013940
+iter=85, val_error=0.013282
+iter=90, val_error=0.014274
+iter=95, val_error=0.013944
+iter=100, val_error=0.015116
+iter=105, val_error=0.016288
+iter=110, val_error=0.013945
+iter=115, val_error=0.013682
+iter=120, val_error=0.014655
+iter=125, val_error=0.014504
+iter=130, val_error=0.013228
+iter=135, val_error=0.013403
+iter=140, val_error=0.014857
+iter=145, val_error=0.014549
+iter=150, val_error=0.014225
+iter=155, val_error=0.013788
+iter=160, val_error=0.014464
+iter=165, val_error=0.014285
+iter=170, val_error=0.015549
+iter=175, val_error=0.014491
+iter=180, val_error=0.013067
+iter=185, val_error=0.013021
+iter=190, val_error=0.014192
+iter=195, val_error=0.014411
+iter=200, val_error=0.013905
+iter=205, val_error=0.013507
+iter=210, val_error=0.014277
+iter=215, val_error=0.013493
+iter=220, val_error=0.012926
+iter=225, val_error=0.013386
+iter=230, val_error=0.013902
+iter=235, val_error=0.013091
+iter=240, val_error=0.013631
+iter=245, val_error=0.013519
+iter=250, val_error=0.013603
+iter=255, val_error=0.013636
+iter=260, val_error=0.013349
+iter=265, val_error=0.012871
+iter=270, val_error=0.013466
+iter=275, val_error=0.013401
+iter=280, val_error=0.013464
+iter=285, val_error=0.013814
+iter=290, val_error=0.013358
+iter=295, val_error=0.013276
+iter=300, val_error=0.013929
+iter=305, val_error=0.015027
+iter=310, val_error=0.013748
+iter=315, val_error=0.013668
+iter=320, val_error=0.013663
+iter=325, val_error=0.013186
+iter=330, val_error=0.013542
+iter=335, val_error=0.013387
+iter=340, val_error=0.013372
+iter=345, val_error=0.013921
+iter=350, val_error=0.013310
+iter=355, val_error=0.013572
+iter=360, val_error=0.014284
+iter=365, val_error=0.014589
+iter=370, val_error=0.015267
+iter=375, val_error=0.013515
+iter=380, val_error=0.013767
+iter=385, val_error=0.015023
+iter=390, val_error=0.013842
+iter=395, val_error=0.013551
+iter=400, val_error=0.013815
+iter=405, val_error=0.014048
+iter=410, val_error=0.013403
+iter=415, val_error=0.013846
+iter=420, val_error=0.013215
+iter=425, val_error=0.014015
+iter=430, val_error=0.013758
+iter=435, val_error=0.013310
+iter=440, val_error=0.014007
+iter=445, val_error=0.013159
+iter=450, val_error=0.013163
+iter=455, val_error=0.013422
+iter=460, val_error=0.013225
+iter=465, val_error=0.013807
+iter=470, val_error=0.012917
+iter=475, val_error=0.012778
+iter=480, val_error=0.013036
+iter=485, val_error=0.012999
+iter=490, val_error=0.014138
+iter=495, val_error=0.012778
+iter=500, val_error=0.012819
+iter=5, val_error=0.012440
+iter=10, val_error=0.013381
+iter=15, val_error=0.013211
+iter=20, val_error=0.012901
+iter=25, val_error=0.012765
+iter=30, val_error=0.012729
+iter=35, val_error=0.012586
+iter=5, val_error=0.013231
+iter=10, val_error=0.012742
+iter=5, val_error=0.015417
+iter=5, val_error=0.014635
+iter=5, val_error=0.000955
+iter=5, val_error=0.001497
+iter=10, val_error=0.000987
+iter=15, val_error=0.000979
+iter=20, val_error=0.000987
+iter=5, val_error=0.000989
+iter=10, val_error=0.000975
+iter=15, val_error=0.001009
+iter=5, val_error=0.000963
+iter=10, val_error=0.001015
+iter=15, val_error=0.000994
+iter=20, val_error=0.001023
+iter=25, val_error=0.001008
+iter=30, val_error=0.000981
+iter=35, val_error=0.001024
+iter=40, val_error=0.001046
+iter=45, val_error=0.000989
+iter=50, val_error=0.001005
+iter=55, val_error=0.000986
+iter=60, val_error=0.001033
+iter=65, val_error=0.001019
+iter=70, val_error=0.001047
+iter=75, val_error=0.001060
+iter=80, val_error=0.000981
+iter=85, val_error=0.000989
+iter=90, val_error=0.000986
+iter=95, val_error=0.000989
+iter=100, val_error=0.001037
+iter=105, val_error=0.001040
+iter=110, val_error=0.001028
+iter=115, val_error=0.000999
+iter=120, val_error=0.001054
+iter=125, val_error=0.001025
+iter=130, val_error=0.000990
+iter=135, val_error=0.000996
+iter=140, val_error=0.001002
+iter=145, val_error=0.000993
+iter=150, val_error=0.001094
+iter=155, val_error=0.001017
+iter=160, val_error=0.001021
+iter=165, val_error=0.001049
+iter=170, val_error=0.001014
+iter=175, val_error=0.001037
+iter=180, val_error=0.001022
+iter=185, val_error=0.001001
+iter=190, val_error=0.001005
+iter=195, val_error=0.000997
+iter=200, val_error=0.001006
+iter=205, val_error=0.001000
+iter=210, val_error=0.001018
+iter=215, val_error=0.001024
+iter=220, val_error=0.001002
+iter=225, val_error=0.001013
+iter=230, val_error=0.001031
+iter=235, val_error=0.001036
+iter=240, val_error=0.001121
+iter=245, val_error=0.000973
+iter=250, val_error=0.000983
+iter=255, val_error=0.001113
+iter=260, val_error=0.000970
+iter=265, val_error=0.001028
+iter=270, val_error=0.000976
+iter=275, val_error=0.001032
+iter=280, val_error=0.001039
+iter=285, val_error=0.001013
+iter=290, val_error=0.000995
+iter=295, val_error=0.001014
+iter=300, val_error=0.001028
+iter=305, val_error=0.001040
+iter=310, val_error=0.001002
+iter=315, val_error=0.001032
+iter=320, val_error=0.001006
+iter=325, val_error=0.001049
+iter=330, val_error=0.001066
+iter=335, val_error=0.001009
+iter=340, val_error=0.001131
+iter=345, val_error=0.001017
+iter=350, val_error=0.001027
+iter=355, val_error=0.001161
+iter=360, val_error=0.001032
+iter=365, val_error=0.001009
+iter=370, val_error=0.001041
+iter=375, val_error=0.001037
+iter=380, val_error=0.001029
+iter=385, val_error=0.000990
+iter=390, val_error=0.001025
+iter=395, val_error=0.000995
+iter=400, val_error=0.000995
+iter=5, val_error=0.001037
+iter=10, val_error=0.000994
+iter=5, val_error=0.012409
+iter=10, val_error=0.012874
+iter=5, val_error=0.074644
+iter=10, val_error=0.076847
+iter=15, val_error=0.074409
+iter=5, val_error=0.070345
+iter=10, val_error=0.071004
+iter=15, val_error=0.072008
+iter=20, val_error=0.076135
+iter=25, val_error=0.074502
+iter=30, val_error=0.079698
+iter=35, val_error=0.073921
+iter=40, val_error=0.075830
+iter=45, val_error=0.077372
+iter=50, val_error=0.074865
+iter=55, val_error=0.073209
+iter=60, val_error=0.081126
+iter=65, val_error=0.083363
+iter=70, val_error=0.077230
+iter=75, val_error=0.082768
+iter=80, val_error=0.078112
+iter=85, val_error=0.079814
+iter=90, val_error=0.078809
+iter=95, val_error=0.085327
+iter=100, val_error=0.082050
+iter=105, val_error=0.075202
+iter=110, val_error=0.087991
+iter=115, val_error=0.079098
+iter=120, val_error=0.076436
+iter=125, val_error=0.071494
+iter=130, val_error=0.071792
+iter=135, val_error=0.082261
+iter=140, val_error=0.090462
+iter=145, val_error=0.099724
+iter=150, val_error=0.084003
+iter=155, val_error=0.088819
+iter=160, val_error=0.092731
+iter=165, val_error=0.101073
+iter=170, val_error=0.084800
+iter=175, val_error=0.088813
+iter=180, val_error=0.087692
+iter=185, val_error=0.114673
+iter=190, val_error=0.095318
+iter=195, val_error=0.079101
+iter=200, val_error=0.096358
+iter=205, val_error=0.098725
+iter=210, val_error=0.088277
+iter=215, val_error=0.095120
+iter=220, val_error=0.089316
+iter=225, val_error=0.079389
+iter=230, val_error=0.107047
+iter=235, val_error=0.086084
+iter=240, val_error=0.083215
+iter=245, val_error=0.105082
+iter=250, val_error=0.097939
+iter=255, val_error=0.098943
+iter=260, val_error=0.078432
+iter=265, val_error=0.104075
+iter=270, val_error=0.115030
+iter=275, val_error=0.095323
+iter=280, val_error=0.086905
+iter=285, val_error=0.117866
+iter=290, val_error=0.103459
+iter=295, val_error=0.114710
+iter=300, val_error=0.102672
+iter=305, val_error=0.123877
+iter=310, val_error=0.093451
+iter=315, val_error=0.101281
+iter=320, val_error=0.125029
+iter=325, val_error=0.113156
+iter=330, val_error=0.084966
+iter=335, val_error=0.113049
+iter=340, val_error=0.107250
+iter=345, val_error=0.136009
+iter=350, val_error=0.135624
+iter=355, val_error=0.134999
+iter=360, val_error=0.114775
+iter=365, val_error=0.112444
+iter=370, val_error=0.135361
+iter=375, val_error=0.140704
+iter=380, val_error=0.116629
+iter=385, val_error=0.108791
+iter=390, val_error=0.113310
+iter=395, val_error=0.123055
+iter=400, val_error=0.140471
+iter=405, val_error=0.113952
+iter=410, val_error=0.095305
+iter=415, val_error=0.129719
+iter=420, val_error=0.116785
+iter=425, val_error=0.121518
+iter=430, val_error=0.128228
+iter=435, val_error=0.155633
+iter=440, val_error=0.122902
+iter=445, val_error=0.099981
+iter=450, val_error=0.135481
+iter=455, val_error=0.124312
+iter=460, val_error=0.134877
+iter=465, val_error=0.129842
+iter=470, val_error=0.136494
+iter=475, val_error=0.112262
+iter=480, val_error=0.111140
+iter=485, val_error=0.168785
+iter=490, val_error=0.115775
+iter=495, val_error=0.145510
+iter=500, val_error=0.120731
+iter=5, val_error=0.069239
+iter=10, val_error=0.070854
+iter=15, val_error=0.074357
+iter=20, val_error=0.073843
+iter=25, val_error=0.076363
+iter=30, val_error=0.074599
+iter=35, val_error=0.080780
+iter=40, val_error=0.074095
+iter=45, val_error=0.079982
+iter=50, val_error=0.074740
+iter=55, val_error=0.077568
+iter=60, val_error=0.079199
+iter=65, val_error=0.077498
+iter=70, val_error=0.073351
+iter=75, val_error=0.079120
+iter=80, val_error=0.074609
+iter=85, val_error=0.089318
+iter=90, val_error=0.093305
+iter=95, val_error=0.074128
+iter=100, val_error=0.077495
+iter=105, val_error=0.085085
+iter=110, val_error=0.084814
+iter=115, val_error=0.089606
+iter=120, val_error=0.094613
+iter=125, val_error=0.094820
+iter=130, val_error=0.081157
+iter=135, val_error=0.101470
+iter=140, val_error=0.089311
+iter=145, val_error=0.086830
+iter=150, val_error=0.089231
+iter=155, val_error=0.101030
+iter=160, val_error=0.079818
+iter=165, val_error=0.090686
+iter=170, val_error=0.097106
+iter=175, val_error=0.099005
+iter=180, val_error=0.090633
+iter=185, val_error=0.103021
+iter=190, val_error=0.082967
+iter=195, val_error=0.099602
+iter=200, val_error=0.083510
+iter=205, val_error=0.087810
+iter=210, val_error=0.090544
+iter=215, val_error=0.091874
+iter=220, val_error=0.091990
+iter=225, val_error=0.094085
+iter=230, val_error=0.098848
+iter=235, val_error=0.094396
+iter=240, val_error=0.096053
+iter=245, val_error=0.087404
+iter=250, val_error=0.078309
+iter=255, val_error=0.113393
+iter=260, val_error=0.093898
+iter=265, val_error=0.091219
+iter=270, val_error=0.091720
+iter=275, val_error=0.080173
+iter=280, val_error=0.106012
+iter=285, val_error=0.082961
+iter=290, val_error=0.094563
+iter=295, val_error=0.077809
+iter=300, val_error=0.091145
+iter=305, val_error=0.092735
+iter=310, val_error=0.094238
+iter=315, val_error=0.101523
+iter=320, val_error=0.098441
+iter=325, val_error=0.095160
+iter=330, val_error=0.084723
+iter=335, val_error=0.095768
+iter=340, val_error=0.090308
+iter=345, val_error=0.094382
+iter=350, val_error=0.090405
+iter=355, val_error=0.107136
+iter=360, val_error=0.077999
+iter=365, val_error=0.097653
+iter=370, val_error=0.095877
+iter=375, val_error=0.077468
+iter=380, val_error=0.128764
+iter=385, val_error=0.109882
+iter=390, val_error=0.107403
+iter=395, val_error=0.087788
+iter=400, val_error=0.085224
+iter=405, val_error=0.095672
+iter=410, val_error=0.092988
+iter=415, val_error=0.090171
+iter=420, val_error=0.090665
+iter=425, val_error=0.101959
+iter=430, val_error=0.102816
+iter=435, val_error=0.095394
+iter=440, val_error=0.107333
+iter=445, val_error=0.092997
+iter=450, val_error=0.099487
+iter=455, val_error=0.116674
+iter=460, val_error=0.104298
+iter=465, val_error=0.118594
+iter=470, val_error=0.154362
+iter=475, val_error=0.119606
+iter=480, val_error=0.103489
+iter=485, val_error=0.107573
+iter=490, val_error=0.108261
+iter=495, val_error=0.092350
+iter=500, val_error=0.099135
+iter=5, val_error=0.158350
+iter=10, val_error=0.117727
+iter=15, val_error=0.094763
+iter=20, val_error=0.089702
+iter=25, val_error=0.087996
+iter=30, val_error=0.079677
+iter=35, val_error=0.084225
+iter=40, val_error=0.081509
+iter=45, val_error=0.081393
+iter=50, val_error=0.082665
+iter=55, val_error=0.086398
+iter=60, val_error=0.083504
+iter=65, val_error=0.083636
+iter=70, val_error=0.086349
+iter=75, val_error=0.091771
+iter=80, val_error=0.091761
+iter=85, val_error=0.088961
+iter=90, val_error=0.091145
+iter=95, val_error=0.098703
+iter=100, val_error=0.107695
+iter=105, val_error=0.119577
+iter=110, val_error=0.115467
+iter=115, val_error=0.122688
+iter=120, val_error=0.124150
+iter=125, val_error=0.130887
+iter=130, val_error=0.123512
+iter=135, val_error=0.123049
+iter=140, val_error=0.127788
+iter=145, val_error=0.122092
+iter=150, val_error=0.133006
+iter=155, val_error=0.138293
+iter=160, val_error=0.135311
+iter=165, val_error=0.134787
+iter=170, val_error=0.139253
+iter=175, val_error=0.143130
+iter=180, val_error=0.140852
+iter=185, val_error=0.141732
+iter=190, val_error=0.150885
+iter=195, val_error=0.152783
+iter=200, val_error=0.160118
+iter=205, val_error=0.161378
+iter=210, val_error=0.154126
+iter=215, val_error=0.163637
+iter=220, val_error=0.168538
+iter=225, val_error=0.170493
+iter=230, val_error=0.160830
+iter=235, val_error=0.169124
+iter=240, val_error=0.162855
+iter=245, val_error=0.163870
+iter=250, val_error=0.155049
+iter=255, val_error=0.166253
+iter=260, val_error=0.178311
+iter=265, val_error=0.185525
+iter=270, val_error=0.179686
+iter=275, val_error=0.177658
+iter=280, val_error=0.180217
+iter=285, val_error=0.170408
+iter=290, val_error=0.167425
+iter=295, val_error=0.175025
+iter=300, val_error=0.178878
+iter=305, val_error=0.198576
+iter=310, val_error=0.195927
+iter=315, val_error=0.198900
+iter=320, val_error=0.179225
+iter=325, val_error=0.184735
+iter=330, val_error=0.188058
+iter=335, val_error=0.184316
+iter=340, val_error=0.184881
+iter=345, val_error=0.197829
+iter=350, val_error=0.199323
+iter=355, val_error=0.192487
+iter=360, val_error=0.191742
+iter=365, val_error=0.192637
+iter=370, val_error=0.202987
+iter=375, val_error=0.225410
+iter=380, val_error=0.222305
+iter=385, val_error=0.223436
+iter=390, val_error=0.234121
+iter=395, val_error=0.229996
+iter=400, val_error=0.241772
+iter=405, val_error=0.236262
+iter=410, val_error=0.240220
+iter=415, val_error=0.234578
+iter=420, val_error=0.234154
+iter=425, val_error=0.247598
+iter=430, val_error=0.251348
+iter=435, val_error=0.255505
+iter=440, val_error=0.255040
+iter=445, val_error=0.268290
+iter=450, val_error=0.276008
+iter=455, val_error=0.279079
+iter=460, val_error=0.281748
+iter=465, val_error=0.285195
+iter=470, val_error=0.284256
+iter=475, val_error=0.296188
+iter=480, val_error=0.315261
+iter=485, val_error=0.308285
+iter=490, val_error=0.302264
+iter=495, val_error=0.307516
+iter=500, val_error=0.347163
+iter=5, val_error=0.066327
+iter=10, val_error=0.037775
+iter=15, val_error=0.029303
+iter=20, val_error=0.028083
+iter=25, val_error=0.025063
+iter=30, val_error=0.022311
+iter=35, val_error=0.022181
+iter=40, val_error=0.024764
+iter=45, val_error=0.020567
+iter=50, val_error=0.021667
+iter=55, val_error=0.021594
+iter=60, val_error=0.021656
+iter=65, val_error=0.019420
+iter=70, val_error=0.019502
+iter=75, val_error=0.018075
+iter=80, val_error=0.020301
+iter=85, val_error=0.019445
+iter=90, val_error=0.017509
+iter=95, val_error=0.018596
+iter=100, val_error=0.020142
+iter=5, val_error=0.012491
+iter=10, val_error=0.012938
+iter=15, val_error=0.013203
+iter=20, val_error=0.013458
+iter=25, val_error=0.013070
+iter=30, val_error=0.012416
+iter=35, val_error=0.012662
+iter=40, val_error=0.013825
+iter=45, val_error=0.012368
+iter=50, val_error=0.012858
+iter=55, val_error=0.012671
+iter=60, val_error=0.013013
+iter=65, val_error=0.012827
+iter=70, val_error=0.012797
+iter=75, val_error=0.012446
+iter=80, val_error=0.012461
+iter=85, val_error=0.012922
+iter=90, val_error=0.012820
+iter=95, val_error=0.012694
+iter=100, val_error=0.012419
+iter=5, val_error=0.015045
+iter=10, val_error=0.013073
+iter=15, val_error=0.012405
+iter=20, val_error=0.012429
+iter=25, val_error=0.012573
+iter=30, val_error=0.012465
+iter=35, val_error=0.012660
+iter=40, val_error=0.012632
+iter=45, val_error=0.012590
+iter=50, val_error=0.012597
+iter=55, val_error=0.013183
+iter=60, val_error=0.012858
+iter=65, val_error=0.012541
+iter=70, val_error=0.012472
+iter=75, val_error=0.012510
+iter=80, val_error=0.012535
+iter=85, val_error=0.012693
+iter=90, val_error=0.012716
+iter=95, val_error=0.012528
+iter=100, val_error=0.012492
+iter=5, val_error=0.012295
+iter=10, val_error=0.012531
+iter=15, val_error=0.013545
+iter=20, val_error=0.013089
+iter=25, val_error=0.012696
+iter=30, val_error=0.012745
+iter=35, val_error=0.013024
+iter=40, val_error=0.012901
+iter=45, val_error=0.012770
+iter=50, val_error=0.013189
+iter=55, val_error=0.012662
+iter=60, val_error=0.013083
+iter=65, val_error=0.012519
+iter=70, val_error=0.012378
+iter=75, val_error=0.012446
+iter=80, val_error=0.012465
+iter=85, val_error=0.012391
+iter=90, val_error=0.012523
+iter=95, val_error=0.012473
+iter=100, val_error=0.012483
+iter=5, val_error=0.012502
+iter=10, val_error=0.013269
+iter=15, val_error=0.013102
+iter=20, val_error=0.013519
+iter=25, val_error=0.013598
+iter=30, val_error=0.013020
+iter=35, val_error=0.014018
+iter=40, val_error=0.012432
+iter=45, val_error=0.012443
+iter=50, val_error=0.012744
+iter=55, val_error=0.012639
+iter=60, val_error=0.013408
+iter=65, val_error=0.012570
+iter=70, val_error=0.012763
+iter=75, val_error=0.012556
+iter=80, val_error=0.012953
+iter=85, val_error=0.012713
+iter=90, val_error=0.012559
+iter=95, val_error=0.012934
+iter=100, val_error=0.013182
+iter=5, val_error=0.012573
+iter=5, val_error=0.013777, accuracy=0.4451
+iter=10, val_error=0.013230, accuracy=0.4398
+iter=15, val_error=0.012815, accuracy=0.4398
+iter=20, val_error=0.012441, accuracy=0.4447
+iter=25, val_error=0.012686, accuracy=0.4400
+iter=30, val_error=0.013375, accuracy=0.4397
+iter=35, val_error=0.012471, accuracy=0.4422
+iter=40, val_error=0.012501, accuracy=0.4477
+iter=45, val_error=0.012442, accuracy=0.4582
+iter=50, val_error=0.012581, accuracy=0.4376
+iter=55, val_error=0.012452, accuracy=0.4532
+iter=60, val_error=0.012782, accuracy=0.4396
+iter=65, val_error=0.012769, accuracy=0.4407
+iter=70, val_error=0.012482, accuracy=0.4566
+iter=75, val_error=0.012494, accuracy=0.4493
+iter=80, val_error=0.012513, accuracy=0.4467
+iter=85, val_error=0.012555, accuracy=0.4440
+iter=90, val_error=0.012938, accuracy=0.5365
+iter=95, val_error=0.013131, accuracy=0.5358
+iter=100, val_error=0.012959, accuracy=0.5361
+iter=5, val_error=0.018185, accuracy=0.4531
+iter=10, val_error=0.013611, accuracy=0.4526
+iter=15, val_error=0.013520, accuracy=0.4535
+iter=20, val_error=0.014163, accuracy=0.4547
+iter=25, val_error=0.014278, accuracy=0.4586
+iter=30, val_error=0.014618, accuracy=0.4623
+iter=35, val_error=0.015495, accuracy=0.4653
+iter=40, val_error=0.016981, accuracy=0.4675
+iter=45, val_error=0.018585, accuracy=0.4742
+iter=50, val_error=0.020647, accuracy=0.4718
+iter=55, val_error=0.020907, accuracy=0.4678
+iter=60, val_error=0.022730, accuracy=0.4696
+iter=65, val_error=0.023605, accuracy=0.4747
+iter=70, val_error=0.023038, accuracy=0.4776
+iter=75, val_error=0.025672, accuracy=0.4810
+iter=80, val_error=0.024218, accuracy=0.4853
+iter=85, val_error=0.026433, accuracy=0.4844
+iter=90, val_error=0.025736, accuracy=0.4839
+iter=95, val_error=0.026309, accuracy=0.4891
+iter=100, val_error=0.024678, accuracy=0.4800
+iter=5, val_error=0.021715, accuracy=0.4926
+iter=10, val_error=0.014734, accuracy=0.5028
+iter=15, val_error=0.013670, accuracy=0.5081
+iter=20, val_error=0.015653, accuracy=0.5276
+iter=25, val_error=0.017468, accuracy=0.5307
+iter=30, val_error=0.017534, accuracy=0.5186
+iter=35, val_error=0.018826, accuracy=0.5305
+iter=40, val_error=0.019073, accuracy=0.5267
+iter=45, val_error=0.020560, accuracy=0.4831
+iter=50, val_error=0.020127, accuracy=0.5033
+iter=55, val_error=0.025680, accuracy=0.5346
+iter=60, val_error=0.022713, accuracy=0.5292
+iter=65, val_error=0.021859, accuracy=0.5277
+iter=70, val_error=0.021829, accuracy=0.5033
+iter=75, val_error=0.019837, accuracy=0.5238
+iter=80, val_error=0.022422, accuracy=0.5349
+iter=85, val_error=0.018171, accuracy=0.4777
+iter=90, val_error=0.020247, accuracy=0.5362
+iter=95, val_error=0.019366, accuracy=0.5375
+iter=100, val_error=0.021522, accuracy=0.5389
+iter=5, val_error=0.012189, accuracy=0.5237
+iter=10, val_error=0.012514, accuracy=0.5311
+iter=15, val_error=0.013063, accuracy=0.5317
+iter=20, val_error=0.013646, accuracy=0.5331
+iter=25, val_error=0.012703, accuracy=0.5313
+iter=30, val_error=0.013217, accuracy=0.5349
+iter=35, val_error=0.012984, accuracy=0.5351
+iter=40, val_error=0.013157, accuracy=0.4398
+iter=45, val_error=0.012719, accuracy=0.4397
+iter=50, val_error=0.012593, accuracy=0.4395
+iter=55, val_error=0.012483, accuracy=0.4560
+iter=60, val_error=0.012493, accuracy=0.4408
+iter=65, val_error=0.013007, accuracy=0.4395
+iter=70, val_error=0.012625, accuracy=0.4431
+iter=75, val_error=0.012589, accuracy=0.4387
+iter=80, val_error=0.012569, accuracy=0.4393
+iter=85, val_error=0.012771, accuracy=0.4403
+iter=90, val_error=0.012445, accuracy=0.4850
+iter=95, val_error=0.012741, accuracy=0.5351
+iter=100, val_error=0.012437, accuracy=0.5190
+iter=5, val_error=0.012664, accuracy=0.5183
+iter=10, val_error=0.012706, accuracy=0.5231
+iter=15, val_error=0.013563, accuracy=0.5330
+iter=20, val_error=0.013228, accuracy=0.5318
+iter=25, val_error=0.012975, accuracy=0.5321
+iter=30, val_error=0.012965, accuracy=0.5335
+iter=35, val_error=0.013557, accuracy=0.5359
+iter=40, val_error=0.013148, accuracy=0.5363
+iter=45, val_error=0.013158, accuracy=0.5363
+iter=50, val_error=0.013514, accuracy=0.5351
+iter=55, val_error=0.012591, accuracy=0.4403
+iter=60, val_error=0.012697, accuracy=0.4406
+iter=65, val_error=0.012619, accuracy=0.4390
+iter=70, val_error=0.012505, accuracy=0.4436
+iter=75, val_error=0.012488, accuracy=0.4543
+iter=80, val_error=0.012542, accuracy=0.4553
+iter=85, val_error=0.012612, accuracy=0.4406
+iter=90, val_error=0.012463, accuracy=0.4507
+iter=95, val_error=0.012516, accuracy=0.4576
+iter=100, val_error=0.012536, accuracy=0.4417
+iter=5, val_error=0.015038, accuracy=0.5181
+iter=10, val_error=0.013719, accuracy=0.5310
+iter=15, val_error=0.013371, accuracy=0.5325
+iter=20, val_error=0.017221, accuracy=0.5333
+iter=25, val_error=0.016270, accuracy=0.5338
+iter=30, val_error=0.021056, accuracy=0.5366
+iter=35, val_error=0.020863, accuracy=0.5209
+iter=40, val_error=0.021264, accuracy=0.5325
+iter=45, val_error=0.023607, accuracy=0.5351
+iter=50, val_error=0.021353, accuracy=0.5325
+iter=55, val_error=0.024242, accuracy=0.5359
+iter=60, val_error=0.023227, accuracy=0.5355
+iter=65, val_error=0.020392, accuracy=0.5353
+iter=70, val_error=0.019527, accuracy=0.4915
+iter=75, val_error=0.020216, accuracy=0.4959
+iter=80, val_error=0.019353, accuracy=0.4897
+iter=85, val_error=0.020545, accuracy=0.4953
+iter=90, val_error=0.021678, accuracy=0.5335
+iter=95, val_error=0.021143, accuracy=0.5386
+iter=100, val_error=0.023185, accuracy=0.5335
+iter=5, val_error=0.051401, accuracy=0.5014
+iter=10, val_error=0.026798, accuracy=0.5224
+iter=15, val_error=0.019896, accuracy=0.5223
+iter=20, val_error=0.017287, accuracy=0.5256
+iter=25, val_error=0.016335, accuracy=0.5295
+iter=30, val_error=0.016000, accuracy=0.5325
+iter=35, val_error=0.016068, accuracy=0.5310
+iter=40, val_error=0.014812, accuracy=0.5292
+iter=45, val_error=0.015159, accuracy=0.5311
+iter=50, val_error=0.014302, accuracy=0.5333
+iter=55, val_error=0.014948, accuracy=0.5326
+iter=60, val_error=0.014989, accuracy=0.5326
+iter=65, val_error=0.015942, accuracy=0.5332
+iter=70, val_error=0.018504, accuracy=0.5330
+iter=75, val_error=0.018215, accuracy=0.5323
+iter=80, val_error=0.018582, accuracy=0.5347
+iter=85, val_error=0.018636, accuracy=0.5353
+iter=90, val_error=0.021324, accuracy=0.5364
+iter=95, val_error=0.020500, accuracy=0.5384
+iter=100, val_error=0.021339, accuracy=0.5355
+iter=5, val_error=0.000993, accuracy=0.4021
+iter=10, val_error=0.000973, accuracy=0.4491
+iter=15, val_error=0.000986, accuracy=0.4239
+iter=20, val_error=0.001047, accuracy=0.3951
+iter=25, val_error=0.000974, accuracy=0.4639
+iter=30, val_error=0.001133, accuracy=0.5382
+iter=35, val_error=0.001029, accuracy=0.3951
+iter=40, val_error=0.000990, accuracy=0.4414
+iter=45, val_error=0.000993, accuracy=0.4302
+iter=50, val_error=0.000985, accuracy=0.4575
+iter=55, val_error=0.000986, accuracy=0.4519
+iter=60, val_error=0.000992, accuracy=0.4126
+iter=65, val_error=0.000974, accuracy=0.5151
+iter=70, val_error=0.001087, accuracy=0.5382
+iter=75, val_error=0.000981, accuracy=0.4596
+iter=80, val_error=0.000991, accuracy=0.4807
+iter=85, val_error=0.000984, accuracy=0.5032
+iter=90, val_error=0.000988, accuracy=0.4505
+iter=95, val_error=0.001075, accuracy=0.5382
+iter=100, val_error=0.000991, accuracy=0.5340
+iter=5, val_error=0.001773, accuracy=0.5270
+iter=10, val_error=0.001153, accuracy=0.5088
+iter=15, val_error=0.001113, accuracy=0.5298
+iter=20, val_error=0.001209, accuracy=0.5326
+iter=25, val_error=0.001262, accuracy=0.5333
+iter=30, val_error=0.001244, accuracy=0.5312
+iter=35, val_error=0.001292, accuracy=0.5333
+iter=40, val_error=0.001349, accuracy=0.5333
+iter=45, val_error=0.001322, accuracy=0.5333
+iter=50, val_error=0.001353, accuracy=0.5347
+iter=55, val_error=0.001376, accuracy=0.5347
+iter=60, val_error=0.001525, accuracy=0.5354
+iter=65, val_error=0.001324, accuracy=0.5354
+iter=70, val_error=0.001379, accuracy=0.5361
+iter=75, val_error=0.001250, accuracy=0.5270
+iter=80, val_error=0.001223, accuracy=0.5228
+iter=85, val_error=0.001230, accuracy=0.4765
+iter=90, val_error=0.001272, accuracy=0.4702
+iter=95, val_error=0.001252, accuracy=0.4821
+iter=100, val_error=0.001295, accuracy=0.4870
+iter=5, val_error=0.007611, accuracy=0.5235
+iter=10, val_error=0.004388, accuracy=0.4246
+iter=15, val_error=0.002971, accuracy=0.4372
+iter=20, val_error=0.002300, accuracy=0.4386
+iter=25, val_error=0.001648, accuracy=0.4442
+iter=30, val_error=0.001383, accuracy=0.4526
+iter=35, val_error=0.001588, accuracy=0.4435
+iter=40, val_error=0.001661, accuracy=0.4400
+iter=45, val_error=0.001614, accuracy=0.4351
+iter=50, val_error=0.001732, accuracy=0.4512
+iter=55, val_error=0.001751, accuracy=0.4519
+iter=60, val_error=0.001672, accuracy=0.4653
+iter=65, val_error=0.001879, accuracy=0.4323
+iter=70, val_error=0.001956, accuracy=0.4400
+iter=75, val_error=0.002019, accuracy=0.4379
+iter=80, val_error=0.001968, accuracy=0.4646
+iter=85, val_error=0.001990, accuracy=0.4625
+iter=90, val_error=0.002009, accuracy=0.4765
+iter=95, val_error=0.002258, accuracy=0.4498
+iter=100, val_error=0.002523, accuracy=0.4477
+iter=5, val_error=0.001669, accuracy=0.5039
+iter=10, val_error=0.001092, accuracy=0.5039
+iter=15, val_error=0.001044, accuracy=0.5067
+iter=20, val_error=0.001110, accuracy=0.5333
+iter=25, val_error=0.001071, accuracy=0.5291
+iter=30, val_error=0.001122, accuracy=0.5263
+iter=35, val_error=0.001231, accuracy=0.5340
+iter=40, val_error=0.001084, accuracy=0.5305
+iter=45, val_error=0.001108, accuracy=0.5340
+iter=50, val_error=0.001039, accuracy=0.5151
+iter=55, val_error=0.001028, accuracy=0.5221
+iter=60, val_error=0.001044, accuracy=0.5214
+iter=65, val_error=0.001058, accuracy=0.5200
+iter=70, val_error=0.001069, accuracy=0.5179
+iter=75, val_error=0.001568, accuracy=0.4351
+iter=80, val_error=0.001320, accuracy=0.4695
+iter=85, val_error=0.001305, accuracy=0.4604
+iter=90, val_error=0.001320, accuracy=0.4632
+iter=95, val_error=0.001329, accuracy=0.4737
+iter=100, val_error=0.001249, accuracy=0.4793
+iter=5, val_error=0.001309, accuracy=0.4589
+iter=10, val_error=0.001064, accuracy=0.4856
+iter=15, val_error=0.001249, accuracy=0.4842
+iter=20, val_error=0.001367, accuracy=0.4793
+iter=25, val_error=0.001422, accuracy=0.4772
+iter=30, val_error=0.001517, accuracy=0.4954
+iter=35, val_error=0.001641, accuracy=0.4835
+iter=40, val_error=0.001660, accuracy=0.4849
+iter=45, val_error=0.001639, accuracy=0.4849
+iter=50, val_error=0.001774, accuracy=0.5228
+iter=55, val_error=0.001804, accuracy=0.4989
+iter=60, val_error=0.002135, accuracy=0.4905
+iter=65, val_error=0.002329, accuracy=0.4877
+iter=70, val_error=0.002333, accuracy=0.4835
+iter=75, val_error=0.002092, accuracy=0.4702
+iter=80, val_error=0.002217, accuracy=0.5067
+iter=85, val_error=0.002266, accuracy=0.5039
+iter=90, val_error=0.002354, accuracy=0.4716
+iter=95, val_error=0.002211, accuracy=0.4849
+iter=100, val_error=0.002216, accuracy=0.4877
+iter=5, val_error=0.001543, accuracy=0.5172
+iter=10, val_error=0.001229, accuracy=0.5326
+iter=15, val_error=0.001109, accuracy=0.5270
+iter=20, val_error=0.001123, accuracy=0.5326
+iter=25, val_error=0.001142, accuracy=0.5298
+iter=30, val_error=0.001180, accuracy=0.5333
+iter=35, val_error=0.001204, accuracy=0.5284
+iter=40, val_error=0.001242, accuracy=0.5270
+iter=45, val_error=0.001253, accuracy=0.5200
+iter=50, val_error=0.001293, accuracy=0.5172
+iter=55, val_error=0.001314, accuracy=0.5193
+iter=60, val_error=0.001446, accuracy=0.5151
+iter=65, val_error=0.001559, accuracy=0.5200
+iter=70, val_error=0.001619, accuracy=0.5200
+iter=75, val_error=0.001413, accuracy=0.5144
+iter=80, val_error=0.001712, accuracy=0.5263
+iter=85, val_error=0.001598, accuracy=0.5214
+iter=90, val_error=0.001523, accuracy=0.5221
+iter=95, val_error=0.001505, accuracy=0.5172
+iter=100, val_error=0.001561, accuracy=0.5228
+iter=5, val_error=0.002891, accuracy=0.5249
+iter=10, val_error=0.001699, accuracy=0.5319
+iter=15, val_error=0.001696, accuracy=0.5270
+iter=20, val_error=0.001444, accuracy=0.5319
+iter=25, val_error=0.001454, accuracy=0.5340
+iter=30, val_error=0.001418, accuracy=0.5326
+iter=35, val_error=0.001331, accuracy=0.5319
+iter=40, val_error=0.001247, accuracy=0.5333
+iter=45, val_error=0.001341, accuracy=0.5347
+iter=50, val_error=0.001279, accuracy=0.5347
+iter=55, val_error=0.001328, accuracy=0.5340
+iter=60, val_error=0.001316, accuracy=0.5361
+iter=65, val_error=0.001315, accuracy=0.5368
+iter=70, val_error=0.001339, accuracy=0.5354
+iter=75, val_error=0.001264, accuracy=0.5375
+iter=80, val_error=0.001426, accuracy=0.5382
+iter=85, val_error=0.001480, accuracy=0.5361
+iter=90, val_error=0.001327, accuracy=0.5333
+iter=95, val_error=0.001464, accuracy=0.5354
+iter=100, val_error=0.001405, accuracy=0.5326
+iter=5, val_error=0.001678, accuracy=0.4744
+iter=10, val_error=0.001831, accuracy=0.4407
+iter=15, val_error=0.001383, accuracy=0.4526
+iter=20, val_error=0.001223, accuracy=0.4561
+iter=25, val_error=0.001224, accuracy=0.4561
+iter=30, val_error=0.001235, accuracy=0.4582
+iter=35, val_error=0.001323, accuracy=0.4288
+iter=40, val_error=0.001258, accuracy=0.4632
+iter=45, val_error=0.001335, accuracy=0.4379
+iter=50, val_error=0.001273, accuracy=0.4646
+iter=55, val_error=0.001324, accuracy=0.4470
+iter=60, val_error=0.001284, accuracy=0.4561
+iter=65, val_error=0.001291, accuracy=0.4604
+iter=70, val_error=0.001319, accuracy=0.4582
+iter=75, val_error=0.001298, accuracy=0.4554
+iter=80, val_error=0.001320, accuracy=0.4751
+iter=85, val_error=0.001331, accuracy=0.4435
+iter=90, val_error=0.001415, accuracy=0.4821
+iter=95, val_error=0.001381, accuracy=0.4449
+iter=100, val_error=0.001383, accuracy=0.4681
+iter=5, val_error=0.002434, accuracy=0.4021
+iter=10, val_error=0.001865, accuracy=0.4042
+iter=15, val_error=0.001464, accuracy=0.4161
+iter=20, val_error=0.001433, accuracy=0.4133
+iter=25, val_error=0.001506, accuracy=0.4084
+iter=30, val_error=0.001449, accuracy=0.4119
+iter=35, val_error=0.001224, accuracy=0.4618
+iter=40, val_error=0.001477, accuracy=0.4126
+iter=45, val_error=0.001302, accuracy=0.4393
+iter=50, val_error=0.001275, accuracy=0.4618
+iter=55, val_error=0.001283, accuracy=0.4554
+iter=60, val_error=0.001231, accuracy=0.4667
+iter=65, val_error=0.001414, accuracy=0.4239
+iter=70, val_error=0.001252, accuracy=0.4688
+iter=75, val_error=0.001346, accuracy=0.4400
+iter=80, val_error=0.001390, accuracy=0.4379
+iter=85, val_error=0.001353, accuracy=0.4421
+iter=90, val_error=0.001424, accuracy=0.4449
+iter=95, val_error=0.001422, accuracy=0.4379
+iter=100, val_error=0.001544, accuracy=0.4379
+iter=5, val_error=0.002034, accuracy=0.4716
+iter=10, val_error=0.002138, accuracy=0.4484
+iter=15, val_error=0.002036, accuracy=0.4449
+iter=20, val_error=0.001638, accuracy=0.4533
+iter=25, val_error=0.001592, accuracy=0.4484
+iter=30, val_error=0.001372, accuracy=0.4828
+iter=35, val_error=0.001412, accuracy=0.4695
+iter=40, val_error=0.001306, accuracy=0.4744
+iter=45, val_error=0.001471, accuracy=0.4498
+iter=50, val_error=0.001411, accuracy=0.4456
+iter=55, val_error=0.001398, accuracy=0.4428
+iter=60, val_error=0.001282, accuracy=0.4709
+iter=65, val_error=0.001302, accuracy=0.4695
+iter=70, val_error=0.001383, accuracy=0.4596
+iter=75, val_error=0.001323, accuracy=0.4660
+iter=80, val_error=0.001330, accuracy=0.4751
+iter=85, val_error=0.001400, accuracy=0.4547
+iter=90, val_error=0.001359, accuracy=0.4695
+iter=95, val_error=0.001424, accuracy=0.4639
+iter=100, val_error=0.001386, accuracy=0.4695
+iter=5, val_error=0.001818, accuracy=0.4288
+iter=10, val_error=0.001431, accuracy=0.4919
+iter=15, val_error=0.001478, accuracy=0.5151
+iter=20, val_error=0.001464, accuracy=0.5130
+iter=25, val_error=0.001455, accuracy=0.5088
+iter=30, val_error=0.001504, accuracy=0.5284
+iter=35, val_error=0.001440, accuracy=0.5284
+iter=40, val_error=0.001478, accuracy=0.5291
+iter=45, val_error=0.001531, accuracy=0.5256
+iter=50, val_error=0.001424, accuracy=0.5235
+iter=55, val_error=0.001537, accuracy=0.5312
+iter=60, val_error=0.001523, accuracy=0.5361
+iter=65, val_error=0.001341, accuracy=0.5221
+iter=70, val_error=0.001322, accuracy=0.5074
+iter=75, val_error=0.001506, accuracy=0.5312
+iter=80, val_error=0.001383, accuracy=0.5186
+iter=85, val_error=0.001332, accuracy=0.5200
+iter=90, val_error=0.001392, accuracy=0.5102
+iter=95, val_error=0.001500, accuracy=0.5235
+iter=100, val_error=0.001399, accuracy=0.5137
+iter=5, val_error=0.003494, accuracy=0.5432
+iter=10, val_error=0.002839, accuracy=0.5411
+iter=15, val_error=0.002014, accuracy=0.5382
+iter=20, val_error=0.001912, accuracy=0.5333
+iter=25, val_error=0.001655, accuracy=0.5249
+iter=30, val_error=0.001701, accuracy=0.5333
+iter=35, val_error=0.001643, accuracy=0.5298
+iter=40, val_error=0.001584, accuracy=0.5396
+iter=45, val_error=0.001490, accuracy=0.5418
+iter=50, val_error=0.001329, accuracy=0.5340
+iter=55, val_error=0.001325, accuracy=0.5284
+iter=60, val_error=0.001286, accuracy=0.5319
+iter=65, val_error=0.001234, accuracy=0.5277
+iter=70, val_error=0.001246, accuracy=0.5340
+iter=75, val_error=0.001207, accuracy=0.5186
+iter=80, val_error=0.001131, accuracy=0.5242
+iter=85, val_error=0.001246, accuracy=0.5312
+iter=90, val_error=0.001261, accuracy=0.5396
+iter=95, val_error=0.001253, accuracy=0.5312
+iter=100, val_error=0.001245, accuracy=0.5305
+iter=5, val_error=0.003334, accuracy=0.4260
+iter=10, val_error=0.001996, accuracy=0.4365
+iter=15, val_error=0.001737, accuracy=0.4316
+iter=20, val_error=0.001647, accuracy=0.4281
+iter=25, val_error=0.001431, accuracy=0.4316
+iter=30, val_error=0.001905, accuracy=0.4154
+iter=35, val_error=0.002059, accuracy=0.4168
+iter=40, val_error=0.001633, accuracy=0.4316
+iter=45, val_error=0.001626, accuracy=0.4358
+iter=50, val_error=0.001436, accuracy=0.4463
+iter=55, val_error=0.001566, accuracy=0.4407
+iter=60, val_error=0.001489, accuracy=0.4582
+iter=65, val_error=0.001526, accuracy=0.4484
+iter=70, val_error=0.001521, accuracy=0.4533
+iter=75, val_error=0.001505, accuracy=0.4547
+iter=80, val_error=0.001525, accuracy=0.4540
+iter=85, val_error=0.001597, accuracy=0.4582
+iter=90, val_error=0.001639, accuracy=0.4568
+iter=95, val_error=0.001573, accuracy=0.4611
+iter=100, val_error=0.001615, accuracy=0.4611
+iter=5, val_error=0.001524, accuracy=0.4253
+iter=10, val_error=0.002614, accuracy=0.3944
+iter=15, val_error=0.002102, accuracy=0.4056
+iter=20, val_error=0.002060, accuracy=0.4126
+iter=25, val_error=0.001833, accuracy=0.4147
+iter=30, val_error=0.001602, accuracy=0.4105
+iter=35, val_error=0.001683, accuracy=0.4204
+iter=40, val_error=0.001744, accuracy=0.4189
+iter=45, val_error=0.001383, accuracy=0.4316
+iter=50, val_error=0.001698, accuracy=0.4154
+iter=55, val_error=0.001354, accuracy=0.4575
+iter=60, val_error=0.001477, accuracy=0.4204
+iter=65, val_error=0.001403, accuracy=0.4337
+iter=70, val_error=0.001446, accuracy=0.4365
+iter=75, val_error=0.001410, accuracy=0.4400
+iter=80, val_error=0.001357, accuracy=0.4456
+iter=85, val_error=0.001454, accuracy=0.4435
+iter=90, val_error=0.001435, accuracy=0.4407
+iter=95, val_error=0.001276, accuracy=0.4695
+iter=100, val_error=0.001337, accuracy=0.4589
+iter=5, val_error=0.001974, accuracy=0.4400
+iter=10, val_error=0.001728, accuracy=0.4344
+iter=15, val_error=0.001447, accuracy=0.4218
+iter=20, val_error=0.001612, accuracy=0.4211
+iter=25, val_error=0.001430, accuracy=0.4182
+iter=30, val_error=0.001569, accuracy=0.4225
+iter=35, val_error=0.001785, accuracy=0.4218
+iter=40, val_error=0.001810, accuracy=0.4211
+iter=45, val_error=0.001411, accuracy=0.4400
+iter=50, val_error=0.001501, accuracy=0.4365
+iter=55, val_error=0.001433, accuracy=0.4491
+iter=60, val_error=0.001375, accuracy=0.4554
+iter=65, val_error=0.001437, accuracy=0.4505
+iter=70, val_error=0.001436, accuracy=0.4611
+iter=75, val_error=0.001475, accuracy=0.4618
+iter=80, val_error=0.001513, accuracy=0.4561
+iter=85, val_error=0.001534, accuracy=0.4519
+iter=90, val_error=0.001588, accuracy=0.4505
+iter=95, val_error=0.001447, accuracy=0.4632
+iter=100, val_error=0.001522, accuracy=0.4582
+iter=5, val_error=0.014495, accuracy=0.4491
+iter=10, val_error=0.002509, accuracy=0.5011
+iter=15, val_error=0.001596, accuracy=0.5102
+iter=20, val_error=0.001359, accuracy=0.5193
+iter=25, val_error=0.001267, accuracy=0.5032
+iter=30, val_error=0.001239, accuracy=0.5179
+iter=35, val_error=0.001208, accuracy=0.5081
+iter=40, val_error=0.001173, accuracy=0.5088
+iter=45, val_error=0.001203, accuracy=0.5074
+iter=50, val_error=0.001158, accuracy=0.5123
+iter=55, val_error=0.001170, accuracy=0.5067
+iter=60, val_error=0.001216, accuracy=0.5158
+iter=65, val_error=0.001218, accuracy=0.5193
+iter=70, val_error=0.001162, accuracy=0.5053
+iter=75, val_error=0.001172, accuracy=0.5165
+iter=80, val_error=0.001113, accuracy=0.5151
+iter=85, val_error=0.001169, accuracy=0.5130
+iter=90, val_error=0.001210, accuracy=0.5046
+iter=95, val_error=0.001199, accuracy=0.4863
+iter=100, val_error=0.001170, accuracy=0.5165
+iter=5, val_error=0.002138, accuracy=0.4049
+iter=10, val_error=0.001754, accuracy=0.4105
+iter=15, val_error=0.001558, accuracy=0.4239
+iter=20, val_error=0.001705, accuracy=0.4084
+iter=25, val_error=0.001594, accuracy=0.4253
+iter=30, val_error=0.001761, accuracy=0.4295
+iter=35, val_error=0.001557, accuracy=0.4456
+iter=40, val_error=0.001577, accuracy=0.4393
+iter=45, val_error=0.001499, accuracy=0.4660
+iter=50, val_error=0.001492, accuracy=0.4681
+iter=55, val_error=0.001576, accuracy=0.4491
+iter=60, val_error=0.001634, accuracy=0.4407
+iter=65, val_error=0.001511, accuracy=0.4737
+iter=70, val_error=0.001540, accuracy=0.4660
+iter=75, val_error=0.001595, accuracy=0.4821
+iter=80, val_error=0.001592, accuracy=0.4688
+iter=85, val_error=0.001629, accuracy=0.4491
+iter=90, val_error=0.001575, accuracy=0.4898
+iter=95, val_error=0.001522, accuracy=0.4863
+iter=100, val_error=0.001610, accuracy=0.4863
+iter=5, val_error=0.002951, accuracy=0.4821
+iter=10, val_error=0.002218, accuracy=0.4968
+iter=15, val_error=0.001655, accuracy=0.4912
+iter=20, val_error=0.001528, accuracy=0.4940
+iter=25, val_error=0.001419, accuracy=0.4954
+iter=30, val_error=0.001361, accuracy=0.5025
+iter=35, val_error=0.001304, accuracy=0.5081
+iter=40, val_error=0.001230, accuracy=0.5102
+iter=45, val_error=0.001229, accuracy=0.4933
+iter=50, val_error=0.001170, accuracy=0.5053
+iter=55, val_error=0.001156, accuracy=0.5025
+iter=60, val_error=0.001157, accuracy=0.5088
+iter=65, val_error=0.001185, accuracy=0.5207
+iter=70, val_error=0.001144, accuracy=0.5025
+iter=75, val_error=0.001197, accuracy=0.4996
+iter=80, val_error=0.001162, accuracy=0.5053
+iter=85, val_error=0.001125, accuracy=0.5130
+iter=90, val_error=0.001156, accuracy=0.5067
+iter=95, val_error=0.001157, accuracy=0.4933
+iter=100, val_error=0.001170, accuracy=0.4870
+iter=5, val_error=0.012733, accuracy=0.4098
+iter=10, val_error=0.004787, accuracy=0.4147
+iter=15, val_error=0.002303, accuracy=0.4316
+iter=20, val_error=0.002192, accuracy=0.4302
+iter=25, val_error=0.002124, accuracy=0.4246
+iter=30, val_error=0.002014, accuracy=0.4323
+iter=35, val_error=0.001985, accuracy=0.4358
+iter=40, val_error=0.001735, accuracy=0.4540
+iter=45, val_error=0.001668, accuracy=0.4505
+iter=50, val_error=0.001755, accuracy=0.4442
+iter=55, val_error=0.001761, accuracy=0.4470
+iter=60, val_error=0.001572, accuracy=0.4632
+iter=65, val_error=0.001459, accuracy=0.4716
+iter=70, val_error=0.001599, accuracy=0.4561
+iter=75, val_error=0.001470, accuracy=0.4667
+iter=80, val_error=0.001532, accuracy=0.4604
+iter=85, val_error=0.001611, accuracy=0.4589
+iter=90, val_error=0.001407, accuracy=0.4695
+iter=95, val_error=0.001393, accuracy=0.4639
+iter=100, val_error=0.001461, accuracy=0.4716
+iter=5, val_error=0.005351, accuracy=0.4772
+iter=10, val_error=0.002954, accuracy=0.4547
+iter=15, val_error=0.002767, accuracy=0.4442
+iter=20, val_error=0.002234, accuracy=0.4386
+iter=25, val_error=0.002443, accuracy=0.4239
+iter=30, val_error=0.001873, accuracy=0.5249
+iter=35, val_error=0.001441, accuracy=0.5270
+iter=40, val_error=0.001350, accuracy=0.5151
+iter=45, val_error=0.001289, accuracy=0.5193
+iter=50, val_error=0.001201, accuracy=0.5179
+iter=55, val_error=0.001235, accuracy=0.5018
+iter=60, val_error=0.001238, accuracy=0.5137
+iter=65, val_error=0.001239, accuracy=0.5158
+iter=70, val_error=0.001205, accuracy=0.5025
+iter=75, val_error=0.001258, accuracy=0.5172
+iter=80, val_error=0.001342, accuracy=0.5039
+iter=85, val_error=0.001348, accuracy=0.5123
+iter=90, val_error=0.001255, accuracy=0.5060
+iter=95, val_error=0.001281, accuracy=0.4982
+iter=100, val_error=0.001270, accuracy=0.4856
+iter=5, val_error=0.002875, accuracy=0.5004
+iter=10, val_error=0.002160, accuracy=0.5074
+iter=15, val_error=0.002144, accuracy=0.5214
+iter=20, val_error=0.001965, accuracy=0.5235
+iter=25, val_error=0.001720, accuracy=0.5291
+iter=30, val_error=0.001853, accuracy=0.5284
+iter=35, val_error=0.002039, accuracy=0.5263
+iter=40, val_error=0.001724, accuracy=0.5319
+iter=45, val_error=0.001866, accuracy=0.5347
+iter=50, val_error=0.001620, accuracy=0.5277
+iter=55, val_error=0.001599, accuracy=0.5326
+iter=60, val_error=0.001557, accuracy=0.5284
+iter=65, val_error=0.001414, accuracy=0.5305
+iter=70, val_error=0.001391, accuracy=0.5305
+iter=75, val_error=0.001333, accuracy=0.5305
+iter=80, val_error=0.001277, accuracy=0.5228
+iter=85, val_error=0.001226, accuracy=0.5256
+iter=90, val_error=0.001251, accuracy=0.5256
+iter=95, val_error=0.001186, accuracy=0.5249
+iter=100, val_error=0.001205, accuracy=0.5179
+iter=5, val_error=0.004599, accuracy=0.4744
+iter=10, val_error=0.002840, accuracy=0.5011
+iter=15, val_error=0.002659, accuracy=0.5186
+iter=20, val_error=0.002291, accuracy=0.4260
+iter=25, val_error=0.001779, accuracy=0.4428
+iter=30, val_error=0.001804, accuracy=0.4386
+iter=35, val_error=0.001665, accuracy=0.4568
+iter=40, val_error=0.001517, accuracy=0.4618
+iter=45, val_error=0.001554, accuracy=0.4505
+iter=50, val_error=0.001393, accuracy=0.4751
+iter=55, val_error=0.001430, accuracy=0.4639
+iter=60, val_error=0.001417, accuracy=0.4646
+iter=65, val_error=0.001433, accuracy=0.4618
+iter=70, val_error=0.001517, accuracy=0.4618
+iter=75, val_error=0.001483, accuracy=0.4554
+iter=80, val_error=0.001347, accuracy=0.4618
+iter=85, val_error=0.001429, accuracy=0.4561
+iter=90, val_error=0.001433, accuracy=0.4519
+iter=95, val_error=0.001266, accuracy=0.4814
+iter=100, val_error=0.001350, accuracy=0.4674
+iter=5, val_error=0.002931, accuracy=0.4400
+iter=10, val_error=0.002015, accuracy=0.4386
+iter=15, val_error=0.001865, accuracy=0.4204
+iter=20, val_error=0.001755, accuracy=0.4168
+iter=25, val_error=0.001574, accuracy=0.4330
+iter=30, val_error=0.001448, accuracy=0.4449
+iter=35, val_error=0.001537, accuracy=0.4428
+iter=40, val_error=0.001426, accuracy=0.4540
+iter=45, val_error=0.001508, accuracy=0.4435
+iter=50, val_error=0.001667, accuracy=0.4323
+iter=55, val_error=0.001396, accuracy=0.4449
+iter=60, val_error=0.001342, accuracy=0.4618
+iter=65, val_error=0.001288, accuracy=0.4786
+iter=70, val_error=0.001478, accuracy=0.4547
+iter=75, val_error=0.001598, accuracy=0.4442
+iter=80, val_error=0.001368, accuracy=0.4632
+iter=85, val_error=0.001343, accuracy=0.4596
+iter=90, val_error=0.001371, accuracy=0.4554
+iter=95, val_error=0.001448, accuracy=0.4505
+iter=100, val_error=0.001351, accuracy=0.4561
+iter=5, val_error=0.004597, accuracy=0.4779
+iter=10, val_error=0.003652, accuracy=0.4505
+iter=15, val_error=0.003605, accuracy=0.4182
+iter=20, val_error=0.002802, accuracy=0.4309
+iter=25, val_error=0.002823, accuracy=0.4182
+iter=30, val_error=0.002103, accuracy=0.4288
+iter=35, val_error=0.002059, accuracy=0.4323
+iter=40, val_error=0.001910, accuracy=0.4407
+iter=45, val_error=0.001805, accuracy=0.4372
+iter=50, val_error=0.001679, accuracy=0.4449
+iter=55, val_error=0.001787, accuracy=0.4428
+iter=60, val_error=0.001699, accuracy=0.4302
+iter=65, val_error=0.001638, accuracy=0.4379
+iter=70, val_error=0.001598, accuracy=0.4505
+iter=75, val_error=0.001692, accuracy=0.4281
+iter=80, val_error=0.001688, accuracy=0.4400
+iter=85, val_error=0.001718, accuracy=0.4260
+iter=90, val_error=0.001760, accuracy=0.4456
+iter=95, val_error=0.001634, accuracy=0.4596
+iter=100, val_error=0.001798, accuracy=0.4456
+iter=5, val_error=0.006887, accuracy=0.4898
+iter=10, val_error=0.003048, accuracy=0.4863
+iter=15, val_error=0.002042, accuracy=0.4484
+iter=20, val_error=0.001914, accuracy=0.4302
+iter=25, val_error=0.001738, accuracy=0.4288
+iter=30, val_error=0.001603, accuracy=0.4449
+iter=35, val_error=0.001602, accuracy=0.4337
+iter=40, val_error=0.001620, accuracy=0.4386
+iter=45, val_error=0.001766, accuracy=0.4372
+iter=50, val_error=0.001780, accuracy=0.4407
+iter=55, val_error=0.001718, accuracy=0.4470
+iter=60, val_error=0.002068, accuracy=0.4253
+iter=65, val_error=0.001783, accuracy=0.4393
+iter=70, val_error=0.001840, accuracy=0.4372
+iter=75, val_error=0.001741, accuracy=0.4428
+iter=80, val_error=0.001607, accuracy=0.4470
+iter=85, val_error=0.001821, accuracy=0.4372
+iter=90, val_error=0.001777, accuracy=0.4358
+iter=95, val_error=0.001611, accuracy=0.4477
+iter=100, val_error=0.001562, accuracy=0.4540
+iter=5, val_error=0.002940, accuracy=0.5039
+iter=10, val_error=0.002165, accuracy=0.5060
+iter=15, val_error=0.001883, accuracy=0.5186
+iter=20, val_error=0.001769, accuracy=0.5214
+iter=25, val_error=0.001773, accuracy=0.5256
+iter=30, val_error=0.001640, accuracy=0.5221
+iter=35, val_error=0.001552, accuracy=0.5151
+iter=40, val_error=0.001578, accuracy=0.5214
+iter=45, val_error=0.001435, accuracy=0.5172
+iter=50, val_error=0.001503, accuracy=0.5151
+iter=55, val_error=0.001476, accuracy=0.5088
+iter=60, val_error=0.001435, accuracy=0.5151
+iter=65, val_error=0.001365, accuracy=0.5081
+iter=70, val_error=0.001389, accuracy=0.5130
+iter=75, val_error=0.001415, accuracy=0.5207
+iter=80, val_error=0.001408, accuracy=0.5228
+iter=85, val_error=0.001385, accuracy=0.5221
+iter=90, val_error=0.001281, accuracy=0.5102
+iter=95, val_error=0.001312, accuracy=0.5179
+iter=100, val_error=0.001265, accuracy=0.5165
+iter=5, val_error=0.008255, accuracy=0.4807
+iter=10, val_error=0.005228, accuracy=0.4147
+iter=15, val_error=0.004771, accuracy=0.4105
+iter=20, val_error=0.003226, accuracy=0.4161
+iter=25, val_error=0.003231, accuracy=0.4161
+iter=30, val_error=0.002978, accuracy=0.4119
+iter=35, val_error=0.002214, accuracy=0.4260
+iter=40, val_error=0.002093, accuracy=0.4196
+iter=45, val_error=0.002039, accuracy=0.4246
+iter=50, val_error=0.002089, accuracy=0.4168
+iter=55, val_error=0.002305, accuracy=0.4126
+iter=60, val_error=0.002078, accuracy=0.4133
+iter=65, val_error=0.002106, accuracy=0.4119
+iter=70, val_error=0.001872, accuracy=0.4267
+iter=75, val_error=0.001992, accuracy=0.4168
+iter=80, val_error=0.002057, accuracy=0.4154
+iter=85, val_error=0.002186, accuracy=0.4154
+iter=90, val_error=0.002101, accuracy=0.4140
+iter=95, val_error=0.002048, accuracy=0.4218
+iter=100, val_error=0.002351, accuracy=0.4091
+iter=5, val_error=0.016366, accuracy=0.5256
+iter=10, val_error=0.006135, accuracy=0.5186
+iter=15, val_error=0.003085, accuracy=0.5186
+iter=20, val_error=0.002239, accuracy=0.5039
+iter=25, val_error=0.001989, accuracy=0.5011
+iter=30, val_error=0.001875, accuracy=0.5046
+iter=35, val_error=0.001755, accuracy=0.4870
+iter=40, val_error=0.001611, accuracy=0.5144
+iter=45, val_error=0.001653, accuracy=0.5067
+iter=50, val_error=0.001554, accuracy=0.4975
+iter=55, val_error=0.001556, accuracy=0.4835
+iter=60, val_error=0.001551, accuracy=0.4800
+iter=65, val_error=0.001495, accuracy=0.4849
+iter=70, val_error=0.001554, accuracy=0.4772
+iter=75, val_error=0.001409, accuracy=0.4954
+iter=80, val_error=0.001372, accuracy=0.5088
+iter=85, val_error=0.001372, accuracy=0.4954
+iter=90, val_error=0.001407, accuracy=0.4884
+iter=95, val_error=0.001357, accuracy=0.4961
+iter=100, val_error=0.001381, accuracy=0.4926
+iter=5, val_error=0.012857, accuracy=0.4821
+iter=10, val_error=0.006029, accuracy=0.4933
+iter=15, val_error=0.003430, accuracy=0.4954
+iter=20, val_error=0.003309, accuracy=0.5039
+iter=25, val_error=0.002038, accuracy=0.5032
+iter=30, val_error=0.001503, accuracy=0.4954
+iter=35, val_error=0.001288, accuracy=0.4954
+iter=40, val_error=0.001308, accuracy=0.5039
+iter=45, val_error=0.001188, accuracy=0.5011
+iter=50, val_error=0.001145, accuracy=0.4940
+iter=55, val_error=0.001090, accuracy=0.4989
+iter=60, val_error=0.001113, accuracy=0.4919
+iter=65, val_error=0.001094, accuracy=0.4982
+iter=70, val_error=0.001119, accuracy=0.4835
+iter=75, val_error=0.001141, accuracy=0.4786
+iter=80, val_error=0.001143, accuracy=0.4828
+iter=85, val_error=0.001194, accuracy=0.4716
+iter=90, val_error=0.001152, accuracy=0.5046
+iter=95, val_error=0.001244, accuracy=0.4849
+iter=100, val_error=0.001203, accuracy=0.4856
+iter=5, val_error=0.010065, accuracy=0.4849
+iter=10, val_error=0.004970, accuracy=0.4779
+iter=15, val_error=0.004270, accuracy=0.4491
+iter=20, val_error=0.004270, accuracy=0.4196
+iter=25, val_error=0.003450, accuracy=0.4239
+iter=30, val_error=0.003576, accuracy=0.4154
+iter=35, val_error=0.003348, accuracy=0.4161
+iter=40, val_error=0.002670, accuracy=0.4323
+iter=45, val_error=0.002655, accuracy=0.4204
+iter=50, val_error=0.002379, accuracy=0.4351
+iter=55, val_error=0.002829, accuracy=0.4133
+iter=60, val_error=0.002615, accuracy=0.4147
+iter=65, val_error=0.002852, accuracy=0.4056
+iter=70, val_error=0.002466, accuracy=0.4112
+iter=75, val_error=0.002332, accuracy=0.4175
+iter=80, val_error=0.002465, accuracy=0.4021
+iter=85, val_error=0.003083, accuracy=0.4063
+iter=90, val_error=0.002399, accuracy=0.4126
+iter=95, val_error=0.002353, accuracy=0.4204
+iter=100, val_error=0.002349, accuracy=0.4204
+iter=5, val_error=0.012242, accuracy=0.4765
+iter=10, val_error=0.005640, accuracy=0.4758
+iter=15, val_error=0.003613, accuracy=0.4582
+iter=20, val_error=0.003130, accuracy=0.5018
+iter=25, val_error=0.002561, accuracy=0.4954
+iter=30, val_error=0.002194, accuracy=0.4926
+iter=35, val_error=0.001968, accuracy=0.4947
+iter=40, val_error=0.001885, accuracy=0.4856
+iter=45, val_error=0.001862, accuracy=0.5109
+iter=50, val_error=0.001752, accuracy=0.5137
+iter=55, val_error=0.001696, accuracy=0.5158
+iter=60, val_error=0.001714, accuracy=0.5137
+iter=65, val_error=0.001579, accuracy=0.4996
+iter=70, val_error=0.001562, accuracy=0.5060
+iter=75, val_error=0.001536, accuracy=0.4807
+iter=80, val_error=0.001479, accuracy=0.4968
+iter=85, val_error=0.001468, accuracy=0.4891
+iter=90, val_error=0.001451, accuracy=0.4968
+iter=95, val_error=0.001495, accuracy=0.5179
+iter=100, val_error=0.001425, accuracy=0.5172
+iter=5, val_error=0.000965, accuracy=0.5382
+iter=10, val_error=0.001059, accuracy=0.5382
+iter=15, val_error=0.001006, accuracy=0.5382
+iter=20, val_error=0.001082, accuracy=0.5382
+iter=5, val_error=0.001100, accuracy=0.3895
+iter=10, val_error=0.001122, accuracy=0.3937
+iter=15, val_error=0.001003, accuracy=0.4870
+iter=20, val_error=0.000996, accuracy=0.4968
+iter=5, val_error=0.001008, accuracy=0.4912
+iter=10, val_error=0.000984, accuracy=0.5305
+iter=15, val_error=0.001035, accuracy=0.5305
+iter=20, val_error=0.001070, accuracy=0.5340
+iter=25, val_error=0.001147, accuracy=0.5361
+iter=30, val_error=0.001009, accuracy=0.5326
+iter=35, val_error=0.001011, accuracy=0.5340
+iter=40, val_error=0.000996, accuracy=0.5361
+iter=45, val_error=0.000979, accuracy=0.4681
+iter=50, val_error=0.000972, accuracy=0.5249
+iter=55, val_error=0.001053, accuracy=0.3951
+iter=60, val_error=0.000998, accuracy=0.4161
+iter=65, val_error=0.001014, accuracy=0.5382
+iter=70, val_error=0.000995, accuracy=0.5312
+iter=75, val_error=0.000988, accuracy=0.5298
+iter=80, val_error=0.000998, accuracy=0.5319
+iter=85, val_error=0.000984, accuracy=0.4800
+iter=90, val_error=0.000982, accuracy=0.4772
+iter=95, val_error=0.000988, accuracy=0.4547
+iter=100, val_error=0.000980, accuracy=0.5060
+iter=5, val_error=0.001160, accuracy=0.4028
+iter=10, val_error=0.000982, accuracy=0.4372
+iter=15, val_error=0.001006, accuracy=0.4021
+iter=20, val_error=0.001026, accuracy=0.3951
+iter=25, val_error=0.000981, accuracy=0.4632
+iter=30, val_error=0.000991, accuracy=0.4337
+iter=35, val_error=0.000982, accuracy=0.4632
+iter=40, val_error=0.000979, accuracy=0.4996
+iter=45, val_error=0.000977, accuracy=0.5011
+iter=50, val_error=0.000982, accuracy=0.5235
+iter=55, val_error=0.000988, accuracy=0.5291
+iter=60, val_error=0.001019, accuracy=0.5319
+iter=65, val_error=0.001020, accuracy=0.5319
+iter=70, val_error=0.000984, accuracy=0.5298
+iter=75, val_error=0.001025, accuracy=0.5312
+iter=80, val_error=0.000991, accuracy=0.5298
+iter=85, val_error=0.000994, accuracy=0.5305
+iter=90, val_error=0.001041, accuracy=0.5411
+iter=95, val_error=0.001039, accuracy=0.5382
+iter=100, val_error=0.001001, accuracy=0.5312
+iter=5, val_error=0.000983, accuracy=0.5130
+iter=10, val_error=0.001025, accuracy=0.3951
+iter=15, val_error=0.000971, accuracy=0.5319
+iter=20, val_error=0.000996, accuracy=0.4723
+iter=25, val_error=0.000999, accuracy=0.4196
+iter=30, val_error=0.000981, accuracy=0.5067
+iter=35, val_error=0.001005, accuracy=0.3972
+iter=40, val_error=0.000976, accuracy=0.5354
+iter=45, val_error=0.000983, accuracy=0.4933
+iter=50, val_error=0.000996, accuracy=0.4449
+iter=55, val_error=0.000978, accuracy=0.5382
+iter=60, val_error=0.000968, accuracy=0.5018
+iter=65, val_error=0.000989, accuracy=0.4814
+iter=70, val_error=0.000984, accuracy=0.4821
+iter=75, val_error=0.000990, accuracy=0.4323
+iter=80, val_error=0.000979, accuracy=0.5298
+iter=85, val_error=0.000993, accuracy=0.5382
+iter=90, val_error=0.000985, accuracy=0.5389
+iter=95, val_error=0.000981, accuracy=0.4793
+iter=100, val_error=0.000978, accuracy=0.4779
+iter=5, val_error=0.002603, accuracy=0.4505
+iter=10, val_error=0.001523, accuracy=0.4253
+iter=15, val_error=0.001363, accuracy=0.4351
+iter=20, val_error=0.001346, accuracy=0.4646
+iter=25, val_error=0.001369, accuracy=0.4274
+iter=30, val_error=0.001274, accuracy=0.4589
+iter=35, val_error=0.001308, accuracy=0.4449
+iter=40, val_error=0.001297, accuracy=0.4786
+iter=45, val_error=0.001272, accuracy=0.5249
+iter=50, val_error=0.001472, accuracy=0.5354
+iter=55, val_error=0.001379, accuracy=0.5347
+iter=60, val_error=0.001150, accuracy=0.5347
+iter=65, val_error=0.001189, accuracy=0.5354
+iter=70, val_error=0.001171, accuracy=0.5326
+iter=75, val_error=0.001196, accuracy=0.5305
+iter=80, val_error=0.001114, accuracy=0.5319
+iter=85, val_error=0.001071, accuracy=0.5312
+iter=90, val_error=0.001146, accuracy=0.5291
+iter=95, val_error=0.001122, accuracy=0.5312
+iter=100, val_error=0.001108, accuracy=0.5333
+iter=5, val_error=0.001107, accuracy=0.5116
+iter=10, val_error=0.001156, accuracy=0.5340
+iter=15, val_error=0.001514, accuracy=0.5396
+iter=20, val_error=0.001381, accuracy=0.5354
+iter=25, val_error=0.001510, accuracy=0.5347
+iter=30, val_error=0.001243, accuracy=0.5326
+iter=35, val_error=0.001275, accuracy=0.5305
+iter=40, val_error=0.001326, accuracy=0.5319
+iter=45, val_error=0.001337, accuracy=0.5340
+iter=50, val_error=0.001382, accuracy=0.5333
+iter=55, val_error=0.001285, accuracy=0.5340
+iter=60, val_error=0.001432, accuracy=0.5319
+iter=65, val_error=0.001205, accuracy=0.5326
+iter=70, val_error=0.001190, accuracy=0.5305
+iter=75, val_error=0.001272, accuracy=0.5305
+iter=80, val_error=0.001378, accuracy=0.5347
+iter=85, val_error=0.001228, accuracy=0.5305
+iter=90, val_error=0.001220, accuracy=0.4898
+iter=95, val_error=0.001161, accuracy=0.4989
+iter=100, val_error=0.001267, accuracy=0.5032
+iter=5, val_error=0.001084, accuracy=0.4982
+iter=10, val_error=0.001353, accuracy=0.5242
+iter=15, val_error=0.001330, accuracy=0.5326
+iter=20, val_error=0.001413, accuracy=0.5347
+iter=25, val_error=0.001223, accuracy=0.5312
+iter=30, val_error=0.001199, accuracy=0.5326
+iter=35, val_error=0.001247, accuracy=0.5312
+iter=40, val_error=0.001275, accuracy=0.5312
+iter=45, val_error=0.001165, accuracy=0.5074
+iter=50, val_error=0.001429, accuracy=0.5326
+iter=55, val_error=0.001383, accuracy=0.5326
+iter=60, val_error=0.001444, accuracy=0.5340
+iter=65, val_error=0.001545, accuracy=0.5340
+iter=70, val_error=0.001279, accuracy=0.5312
+iter=75, val_error=0.001291, accuracy=0.5305
+iter=80, val_error=0.001264, accuracy=0.5319
+iter=85, val_error=0.001236, accuracy=0.5305
+iter=90, val_error=0.001197, accuracy=0.5284
+iter=95, val_error=0.001128, accuracy=0.5298
+iter=100, val_error=0.001229, accuracy=0.5298
+iter=5, val_error=0.001313, accuracy=0.4533
+iter=10, val_error=0.001001, accuracy=0.5046
+iter=15, val_error=0.001040, accuracy=0.5116
+iter=20, val_error=0.001096, accuracy=0.4723
+iter=25, val_error=0.001414, accuracy=0.5396
+iter=30, val_error=0.001370, accuracy=0.5418
+iter=35, val_error=0.001691, accuracy=0.5368
+iter=40, val_error=0.001402, accuracy=0.5319
+iter=45, val_error=0.001258, accuracy=0.5354
+iter=50, val_error=0.001327, accuracy=0.5333
+iter=55, val_error=0.001310, accuracy=0.5333
+iter=60, val_error=0.001302, accuracy=0.5340
+iter=65, val_error=0.001194, accuracy=0.5312
+iter=70, val_error=0.001134, accuracy=0.5305
+iter=75, val_error=0.001107, accuracy=0.5291
+iter=80, val_error=0.001121, accuracy=0.5298
+iter=85, val_error=0.001077, accuracy=0.5270
+iter=90, val_error=0.001083, accuracy=0.5235
+iter=95, val_error=0.001079, accuracy=0.5221
+iter=100, val_error=0.001083, accuracy=0.5235
+iter=5, val_error=0.001866, accuracy=0.4175
+iter=10, val_error=0.001456, accuracy=0.3993
+iter=15, val_error=0.001433, accuracy=0.3993
+iter=20, val_error=0.001316, accuracy=0.4035
+iter=25, val_error=0.001214, accuracy=0.4442
+iter=30, val_error=0.001234, accuracy=0.4561
+iter=35, val_error=0.001319, accuracy=0.4926
+iter=40, val_error=0.001337, accuracy=0.4575
+iter=45, val_error=0.001393, accuracy=0.4772
+iter=50, val_error=0.001422, accuracy=0.4856
+iter=55, val_error=0.001414, accuracy=0.4512
+iter=60, val_error=0.001332, accuracy=0.4933
+iter=65, val_error=0.001368, accuracy=0.5186
+iter=70, val_error=0.001383, accuracy=0.5004
+iter=75, val_error=0.001252, accuracy=0.5179
+iter=80, val_error=0.001224, accuracy=0.5319
+iter=85, val_error=0.001203, accuracy=0.5270
+iter=90, val_error=0.001182, accuracy=0.5284
+iter=95, val_error=0.001163, accuracy=0.5298
+iter=100, val_error=0.001156, accuracy=0.5305
+iter=5, val_error=0.001723, accuracy=0.4632
+iter=10, val_error=0.001108, accuracy=0.5249
+iter=15, val_error=0.001147, accuracy=0.5235
+iter=20, val_error=0.001196, accuracy=0.5228
+iter=25, val_error=0.001203, accuracy=0.5312
+iter=30, val_error=0.001090, accuracy=0.5305
+iter=35, val_error=0.001147, accuracy=0.5319
+iter=40, val_error=0.001707, accuracy=0.5347
+iter=45, val_error=0.001499, accuracy=0.5347
+iter=50, val_error=0.001312, accuracy=0.5375
+iter=55, val_error=0.001345, accuracy=0.5354
+iter=60, val_error=0.001208, accuracy=0.5284
+iter=65, val_error=0.001358, accuracy=0.5340
+iter=70, val_error=0.001376, accuracy=0.5347
+iter=75, val_error=0.001211, accuracy=0.5326
+iter=80, val_error=0.001315, accuracy=0.5319
+iter=85, val_error=0.001293, accuracy=0.5326
+iter=90, val_error=0.001137, accuracy=0.5151
+iter=95, val_error=0.001132, accuracy=0.5291
+iter=100, val_error=0.001211, accuracy=0.5305
+iter=5, val_error=0.001955, accuracy=0.4358
+iter=10, val_error=0.001755, accuracy=0.4281
+iter=15, val_error=0.001358, accuracy=0.4372
+iter=20, val_error=0.001345, accuracy=0.4133
+iter=25, val_error=0.001247, accuracy=0.4365
+iter=30, val_error=0.001223, accuracy=0.4274
+iter=35, val_error=0.001221, accuracy=0.4716
+iter=40, val_error=0.001273, accuracy=0.4905
+iter=45, val_error=0.001321, accuracy=0.5025
+iter=50, val_error=0.001475, accuracy=0.4667
+iter=55, val_error=0.001551, accuracy=0.4835
+iter=60, val_error=0.001804, accuracy=0.4891
+iter=65, val_error=0.001488, accuracy=0.4884
+iter=70, val_error=0.001593, accuracy=0.5354
+iter=75, val_error=0.001497, accuracy=0.5312
+iter=80, val_error=0.001691, accuracy=0.5340
+iter=85, val_error=0.001534, accuracy=0.5305
+iter=90, val_error=0.001524, accuracy=0.5326
+iter=95, val_error=0.001501, accuracy=0.5291
+iter=100, val_error=0.001438, accuracy=0.5312
+iter=5, val_error=0.001451, accuracy=0.4484
+iter=10, val_error=0.001148, accuracy=0.4421
+iter=15, val_error=0.001187, accuracy=0.4442
+iter=20, val_error=0.001185, accuracy=0.5179
+iter=25, val_error=0.001232, accuracy=0.4807
+iter=30, val_error=0.001239, accuracy=0.4884
+iter=35, val_error=0.001291, accuracy=0.4568
+iter=40, val_error=0.001306, accuracy=0.4533
+iter=45, val_error=0.001307, accuracy=0.4926
+iter=50, val_error=0.001279, accuracy=0.5172
+iter=55, val_error=0.001317, accuracy=0.4926
+iter=60, val_error=0.001328, accuracy=0.4898
+iter=65, val_error=0.001356, accuracy=0.4933
+iter=70, val_error=0.001396, accuracy=0.4681
+iter=75, val_error=0.001397, accuracy=0.4968
+iter=80, val_error=0.001411, accuracy=0.4947
+iter=85, val_error=0.001400, accuracy=0.4891
+iter=90, val_error=0.001379, accuracy=0.4961
+iter=95, val_error=0.001354, accuracy=0.4884
+iter=100, val_error=0.001276, accuracy=0.5214
+iter=5, val_error=0.001117, accuracy=0.4154
+iter=10, val_error=0.001250, accuracy=0.3979
+iter=15, val_error=0.001253, accuracy=0.4091
+iter=20, val_error=0.001184, accuracy=0.4281
+iter=25, val_error=0.001119, accuracy=0.5326
+iter=30, val_error=0.001164, accuracy=0.5347
+iter=35, val_error=0.001265, accuracy=0.5354
+iter=40, val_error=0.001289, accuracy=0.5319
+iter=45, val_error=0.001472, accuracy=0.5354
+iter=50, val_error=0.001431, accuracy=0.5361
+iter=55, val_error=0.001525, accuracy=0.5368
+iter=60, val_error=0.001427, accuracy=0.5368
+iter=65, val_error=0.001336, accuracy=0.5368
+iter=70, val_error=0.001339, accuracy=0.5361
+iter=75, val_error=0.001252, accuracy=0.5361
+iter=80, val_error=0.001152, accuracy=0.5200
+iter=85, val_error=0.001196, accuracy=0.4695
+iter=90, val_error=0.001181, accuracy=0.4695
+iter=95, val_error=0.001252, accuracy=0.4779
+iter=100, val_error=0.001155, accuracy=0.4723
+iter=5, val_error=0.001164, accuracy=0.4337
+iter=10, val_error=0.001295, accuracy=0.4035
+iter=15, val_error=0.001405, accuracy=0.4105
+iter=20, val_error=0.001210, accuracy=0.5389
+iter=25, val_error=0.001260, accuracy=0.5382
+iter=30, val_error=0.001407, accuracy=0.5382
+iter=35, val_error=0.001521, accuracy=0.5368
+iter=40, val_error=0.001336, accuracy=0.5340
+iter=45, val_error=0.001385, accuracy=0.5347
+iter=50, val_error=0.001274, accuracy=0.5319
+iter=55, val_error=0.001342, accuracy=0.5312
+iter=60, val_error=0.001263, accuracy=0.5312
+iter=65, val_error=0.001237, accuracy=0.5326
+iter=70, val_error=0.001239, accuracy=0.5326
+iter=75, val_error=0.001204, accuracy=0.5312
+iter=80, val_error=0.001312, accuracy=0.5333
+iter=85, val_error=0.001236, accuracy=0.5319
+iter=90, val_error=0.001210, accuracy=0.5088
+iter=95, val_error=0.001143, accuracy=0.4968
+iter=100, val_error=0.001176, accuracy=0.5354
+iter=5, val_error=0.001110, accuracy=0.3951
+iter=10, val_error=0.001015, accuracy=0.3951
+iter=15, val_error=0.001034, accuracy=0.3951
+iter=20, val_error=0.000988, accuracy=0.4358
+iter=25, val_error=0.001006, accuracy=0.3937
+iter=30, val_error=0.001066, accuracy=0.3951
+iter=35, val_error=0.000975, accuracy=0.5074
+iter=40, val_error=0.000981, accuracy=0.4842
+iter=45, val_error=0.000999, accuracy=0.3958
+iter=50, val_error=0.000980, accuracy=0.4898
+iter=55, val_error=0.000980, accuracy=0.5200
+iter=60, val_error=0.001000, accuracy=0.4049
+iter=65, val_error=0.000987, accuracy=0.4547
+iter=70, val_error=0.000984, accuracy=0.4589
+iter=75, val_error=0.000986, accuracy=0.5382
+iter=80, val_error=0.000981, accuracy=0.5256
+iter=85, val_error=0.001041, accuracy=0.5382
+iter=90, val_error=0.001014, accuracy=0.5382
+iter=95, val_error=0.001001, accuracy=0.5382
+iter=100, val_error=0.001040, accuracy=0.5382
+iter=5, val_error=0.001068, accuracy=0.4035
+iter=10, val_error=0.000984, accuracy=0.5326
+iter=15, val_error=0.000991, accuracy=0.5319
+iter=20, val_error=0.001008, accuracy=0.5389
+iter=25, val_error=0.001004, accuracy=0.5354
+iter=30, val_error=0.000976, accuracy=0.5326
+iter=35, val_error=0.001027, accuracy=0.5389
+iter=40, val_error=0.001089, accuracy=0.3951
+iter=45, val_error=0.001011, accuracy=0.3972
+iter=50, val_error=0.000999, accuracy=0.4007
+iter=55, val_error=0.000981, accuracy=0.5018
+iter=60, val_error=0.001025, accuracy=0.3958
+iter=65, val_error=0.000993, accuracy=0.4274
+iter=70, val_error=0.000997, accuracy=0.4126
+iter=75, val_error=0.001002, accuracy=0.4344
+iter=80, val_error=0.001042, accuracy=0.3951
+iter=85, val_error=0.001029, accuracy=0.3951
+iter=90, val_error=0.000983, accuracy=0.5130
+iter=95, val_error=0.000997, accuracy=0.4519
+iter=100, val_error=0.001016, accuracy=0.5382
+iter=5, val_error=0.000970, accuracy=0.5382
+iter=10, val_error=0.001033, accuracy=0.5382
+iter=15, val_error=0.001031, accuracy=0.3951
+iter=20, val_error=0.001079, accuracy=0.3951
+iter=25, val_error=0.000974, accuracy=0.5411
+iter=30, val_error=0.001007, accuracy=0.3951
+iter=35, val_error=0.000980, accuracy=0.5382
+iter=40, val_error=0.000974, accuracy=0.5305
+iter=45, val_error=0.000987, accuracy=0.5382
+iter=50, val_error=0.001015, accuracy=0.5382
+iter=55, val_error=0.001011, accuracy=0.5382
+iter=60, val_error=0.001004, accuracy=0.3951
+iter=65, val_error=0.001015, accuracy=0.3951
+iter=70, val_error=0.000983, accuracy=0.5060
+iter=75, val_error=0.000977, accuracy=0.5151
+iter=80, val_error=0.001047, accuracy=0.5382
+iter=85, val_error=0.001007, accuracy=0.5382
+iter=90, val_error=0.000992, accuracy=0.5382
+iter=95, val_error=0.000984, accuracy=0.5242
+iter=100, val_error=0.001008, accuracy=0.5382
+iter=5, val_error=0.001002, accuracy=0.4246
+iter=10, val_error=0.000998, accuracy=0.4154
+iter=15, val_error=0.000981, accuracy=0.4400
+iter=20, val_error=0.000983, accuracy=0.4393
+iter=25, val_error=0.000984, accuracy=0.4947
+iter=30, val_error=0.000979, accuracy=0.5200
+iter=35, val_error=0.000992, accuracy=0.4337
+iter=40, val_error=0.000975, accuracy=0.5263
+iter=45, val_error=0.000987, accuracy=0.4639
+iter=50, val_error=0.001010, accuracy=0.3972
+iter=55, val_error=0.000990, accuracy=0.4456
+iter=60, val_error=0.000996, accuracy=0.4154
+iter=65, val_error=0.000980, accuracy=0.4891
+iter=70, val_error=0.000989, accuracy=0.4442
+iter=75, val_error=0.000993, accuracy=0.4302
+iter=80, val_error=0.000985, accuracy=0.4926
+iter=85, val_error=0.000981, accuracy=0.4898
+iter=90, val_error=0.000995, accuracy=0.4204
+iter=95, val_error=0.000983, accuracy=0.4905
+iter=100, val_error=0.001016, accuracy=0.3951
+iter=5, val_error=0.000986, accuracy=0.4182
+iter=10, val_error=0.001028, accuracy=0.3951
+iter=15, val_error=0.001017, accuracy=0.3951
+iter=20, val_error=0.001000, accuracy=0.3972
+iter=25, val_error=0.000995, accuracy=0.4119
+iter=30, val_error=0.000986, accuracy=0.4421
+iter=35, val_error=0.000995, accuracy=0.4168
+iter=40, val_error=0.000984, accuracy=0.4477
+iter=45, val_error=0.000975, accuracy=0.4849
+iter=50, val_error=0.000981, accuracy=0.4512
+iter=55, val_error=0.000984, accuracy=0.4351
+iter=60, val_error=0.001068, accuracy=0.3951
+iter=65, val_error=0.001001, accuracy=0.5382
+iter=70, val_error=0.000985, accuracy=0.5382
+iter=75, val_error=0.001000, accuracy=0.5382
+iter=80, val_error=0.000991, accuracy=0.5382
+iter=85, val_error=0.001022, accuracy=0.5382
+iter=90, val_error=0.001012, accuracy=0.5382
+iter=95, val_error=0.000988, accuracy=0.4372
+iter=100, val_error=0.000986, accuracy=0.4449
+iter=5, val_error=0.001000, accuracy=0.4428
+iter=10, val_error=0.001001, accuracy=0.4000
+iter=15, val_error=0.001002, accuracy=0.3951
+iter=20, val_error=0.001005, accuracy=0.3951
+iter=25, val_error=0.001017, accuracy=0.3951
+iter=30, val_error=0.000992, accuracy=0.4646
+iter=35, val_error=0.000999, accuracy=0.4365
+iter=40, val_error=0.001011, accuracy=0.3923
+iter=45, val_error=0.001050, accuracy=0.5382
+iter=50, val_error=0.001028, accuracy=0.5382
+iter=55, val_error=0.001001, accuracy=0.5382
+iter=60, val_error=0.001021, accuracy=0.5382
+iter=65, val_error=0.001061, accuracy=0.5382
+iter=70, val_error=0.000990, accuracy=0.5382
+iter=75, val_error=0.001013, accuracy=0.5382
+iter=80, val_error=0.001000, accuracy=0.5382
+iter=85, val_error=0.001006, accuracy=0.4133
+iter=90, val_error=0.000993, accuracy=0.4877
+iter=95, val_error=0.001001, accuracy=0.4821
+iter=100, val_error=0.001036, accuracy=0.5382
+iter=5, val_error=0.000981, accuracy=0.5389
+iter=10, val_error=0.001030, accuracy=0.5382
+iter=15, val_error=0.001038, accuracy=0.5382
+iter=20, val_error=0.001017, accuracy=0.5382
+iter=25, val_error=0.000984, accuracy=0.5389
+iter=30, val_error=0.000978, accuracy=0.5382
+iter=35, val_error=0.000974, accuracy=0.5382
+iter=40, val_error=0.001128, accuracy=0.5382
+iter=45, val_error=0.001004, accuracy=0.3951
+iter=50, val_error=0.001054, accuracy=0.5382
+iter=55, val_error=0.001015, accuracy=0.5382
+iter=60, val_error=0.001007, accuracy=0.5382
+iter=65, val_error=0.001030, accuracy=0.5382
+iter=70, val_error=0.001108, accuracy=0.5382
+iter=75, val_error=0.001020, accuracy=0.3944
+iter=80, val_error=0.001008, accuracy=0.3986
+iter=85, val_error=0.001059, accuracy=0.5382
+iter=90, val_error=0.001018, accuracy=0.5389
+iter=95, val_error=0.000996, accuracy=0.5263
+iter=100, val_error=0.000989, accuracy=0.5053
+iter=5, val_error=0.001659, accuracy=0.4898
+iter=10, val_error=0.001700, accuracy=0.4816
+iter=15, val_error=0.001734, accuracy=0.4838
+iter=20, val_error=0.001671, accuracy=0.4900
+iter=25, val_error=0.001651, accuracy=0.4856
+iter=30, val_error=0.001704, accuracy=0.4922
+iter=35, val_error=0.001682, accuracy=0.4796
+iter=40, val_error=0.001640, accuracy=0.5028
+iter=45, val_error=0.001693, accuracy=0.4813
+iter=50, val_error=0.001669, accuracy=0.4852
+iter=5, val_error=0.001073, accuracy=0.3951
+iter=10, val_error=0.000980, accuracy=0.5382
+iter=15, val_error=0.000994, accuracy=0.5382
+iter=20, val_error=0.001002, accuracy=0.4302
+iter=25, val_error=0.001053, accuracy=0.5382
+iter=30, val_error=0.001019, accuracy=0.4000
+iter=35, val_error=0.000987, accuracy=0.5382
+iter=40, val_error=0.000997, accuracy=0.4239
+iter=45, val_error=0.000990, accuracy=0.5382
+iter=50, val_error=0.001019, accuracy=0.5382
+iter=55, val_error=0.000988, accuracy=0.5382
+iter=60, val_error=0.000996, accuracy=0.5382
+iter=65, val_error=0.001018, accuracy=0.3937
+iter=70, val_error=0.001022, accuracy=0.5382
+iter=75, val_error=0.000979, accuracy=0.5382
+iter=80, val_error=0.001004, accuracy=0.4246
+iter=85, val_error=0.001014, accuracy=0.4288
+iter=90, val_error=0.001017, accuracy=0.4133
+iter=95, val_error=0.000967, accuracy=0.5347
+iter=100, val_error=0.000977, accuracy=0.4954
+iter=5, val_error=0.000987, accuracy=0.5382
+iter=10, val_error=0.001127, accuracy=0.3951
+iter=15, val_error=0.000976, accuracy=0.5312
+iter=20, val_error=0.001034, accuracy=0.3951
+iter=25, val_error=0.000972, accuracy=0.5144
+iter=30, val_error=0.000986, accuracy=0.4982
+iter=35, val_error=0.000996, accuracy=0.4421
+iter=40, val_error=0.001004, accuracy=0.5382
+iter=45, val_error=0.001016, accuracy=0.3993
+iter=50, val_error=0.000986, accuracy=0.5214
+iter=55, val_error=0.001008, accuracy=0.3930
+iter=60, val_error=0.000983, accuracy=0.5382
+iter=65, val_error=0.000992, accuracy=0.5298
+iter=70, val_error=0.000983, accuracy=0.5382
+iter=75, val_error=0.000981, accuracy=0.5382
+iter=80, val_error=0.000980, accuracy=0.5382
+iter=85, val_error=0.001007, accuracy=0.4042
+iter=90, val_error=0.000978, accuracy=0.5081
+iter=95, val_error=0.000977, accuracy=0.5382
+iter=100, val_error=0.000971, accuracy=0.5382
+iter=5, val_error=0.001049, accuracy=0.3951
+iter=10, val_error=0.001029, accuracy=0.3951
+iter=15, val_error=0.000981, accuracy=0.5382
+iter=20, val_error=0.000984, accuracy=0.5340
+iter=25, val_error=0.000979, accuracy=0.4933
+iter=30, val_error=0.001059, accuracy=0.5382
+iter=35, val_error=0.000984, accuracy=0.5158
+iter=40, val_error=0.000992, accuracy=0.5382
+iter=45, val_error=0.000984, accuracy=0.5361
+iter=50, val_error=0.000995, accuracy=0.5382
+iter=55, val_error=0.000987, accuracy=0.5382
+iter=60, val_error=0.001000, accuracy=0.4288
+iter=65, val_error=0.000986, accuracy=0.5382
+iter=70, val_error=0.000997, accuracy=0.4737
+iter=75, val_error=0.001031, accuracy=0.5382
+iter=80, val_error=0.000999, accuracy=0.5382
+iter=85, val_error=0.001008, accuracy=0.4084
+iter=90, val_error=0.001001, accuracy=0.4940
+iter=95, val_error=0.000995, accuracy=0.5382
+iter=100, val_error=0.001008, accuracy=0.3986
+iter=5, val_error=0.001003, accuracy=0.4126
+iter=10, val_error=0.000975, accuracy=0.5284
+iter=15, val_error=0.001009, accuracy=0.3951
+iter=20, val_error=0.000998, accuracy=0.4737
+iter=25, val_error=0.000987, accuracy=0.5382
+iter=30, val_error=0.000987, accuracy=0.5460
+iter=35, val_error=0.000992, accuracy=0.5382
+iter=40, val_error=0.000993, accuracy=0.5382
+iter=45, val_error=0.001022, accuracy=0.3986
+iter=50, val_error=0.000985, accuracy=0.5214
+iter=55, val_error=0.000987, accuracy=0.5025
+iter=60, val_error=0.000971, accuracy=0.5263
+iter=65, val_error=0.000979, accuracy=0.5151
+iter=70, val_error=0.000979, accuracy=0.5375
+iter=75, val_error=0.000992, accuracy=0.4961
+iter=80, val_error=0.000964, accuracy=0.5312
+iter=85, val_error=0.000973, accuracy=0.5249
+iter=90, val_error=0.000977, accuracy=0.5137
+iter=95, val_error=0.000984, accuracy=0.5144
+iter=100, val_error=0.000971, accuracy=0.5228
+iter=5, val_error=0.001239, accuracy=0.3951
+iter=10, val_error=0.000985, accuracy=0.5411
+iter=15, val_error=0.000991, accuracy=0.4667
+iter=20, val_error=0.001023, accuracy=0.5382
+iter=25, val_error=0.000988, accuracy=0.5382
+iter=30, val_error=0.001024, accuracy=0.5382
+iter=35, val_error=0.000997, accuracy=0.5382
+iter=40, val_error=0.001028, accuracy=0.5382
+iter=45, val_error=0.001011, accuracy=0.4126
+iter=50, val_error=0.001009, accuracy=0.3951
+iter=55, val_error=0.000989, accuracy=0.5137
+iter=60, val_error=0.001012, accuracy=0.5382
+iter=65, val_error=0.001013, accuracy=0.4189
+iter=70, val_error=0.000996, accuracy=0.5382
+iter=75, val_error=0.001001, accuracy=0.5011
+iter=80, val_error=0.001017, accuracy=0.3930
+iter=85, val_error=0.000999, accuracy=0.4351
+iter=90, val_error=0.001012, accuracy=0.5382
+iter=95, val_error=0.001019, accuracy=0.4639
+iter=100, val_error=0.000993, accuracy=0.4996
+iter=5, val_error=0.001021, accuracy=0.5361
+iter=10, val_error=0.000990, accuracy=0.5326
+iter=15, val_error=0.001026, accuracy=0.5389
+iter=20, val_error=0.001002, accuracy=0.4302
+iter=25, val_error=0.000997, accuracy=0.4870
+iter=30, val_error=0.000994, accuracy=0.4618
+iter=35, val_error=0.001010, accuracy=0.4267
+iter=40, val_error=0.000993, accuracy=0.5389
+iter=45, val_error=0.000997, accuracy=0.5382
+iter=50, val_error=0.000986, accuracy=0.5382
+iter=55, val_error=0.000994, accuracy=0.5396
+iter=60, val_error=0.000988, accuracy=0.5389
+iter=65, val_error=0.000988, accuracy=0.5382
+iter=70, val_error=0.000988, accuracy=0.5333
+iter=75, val_error=0.000999, accuracy=0.4379
+iter=80, val_error=0.001021, accuracy=0.3930
+iter=85, val_error=0.000987, accuracy=0.4926
+iter=90, val_error=0.001014, accuracy=0.4365
+iter=95, val_error=0.000984, accuracy=0.5158
+iter=100, val_error=0.000985, accuracy=0.4793
+iter=5, val_error=0.000984, accuracy=0.5291
+iter=10, val_error=0.001005, accuracy=0.4204
+iter=15, val_error=0.001005, accuracy=0.5382
+iter=20, val_error=0.000977, accuracy=0.5368
+iter=25, val_error=0.000989, accuracy=0.5354
+iter=30, val_error=0.000986, accuracy=0.5382
+iter=35, val_error=0.000985, accuracy=0.5432
+iter=40, val_error=0.000986, accuracy=0.5382
+iter=45, val_error=0.001006, accuracy=0.4414
+iter=50, val_error=0.000988, accuracy=0.5382
+iter=55, val_error=0.001003, accuracy=0.4379
+iter=60, val_error=0.000983, accuracy=0.5123
+iter=65, val_error=0.001031, accuracy=0.4161
+iter=70, val_error=0.000974, accuracy=0.4905
+iter=75, val_error=0.000982, accuracy=0.5207
+iter=80, val_error=0.000966, accuracy=0.5137
+iter=85, val_error=0.000976, accuracy=0.5256
+iter=90, val_error=0.000988, accuracy=0.4891
+iter=95, val_error=0.000980, accuracy=0.5137
+iter=100, val_error=0.001028, accuracy=0.4484
+iter=5, val_error=0.000970, accuracy=0.5389
+iter=10, val_error=0.000969, accuracy=0.5411
+iter=15, val_error=0.001044, accuracy=0.5382
+iter=20, val_error=0.000992, accuracy=0.5382
+iter=25, val_error=0.000988, accuracy=0.5382
+iter=30, val_error=0.001003, accuracy=0.5081
+iter=35, val_error=0.000998, accuracy=0.5382
+iter=40, val_error=0.000983, accuracy=0.5172
+iter=45, val_error=0.000979, accuracy=0.5333
+iter=50, val_error=0.001018, accuracy=0.4351
+iter=55, val_error=0.001015, accuracy=0.4428
+iter=60, val_error=0.000980, accuracy=0.5137
+iter=65, val_error=0.000955, accuracy=0.5207
+iter=70, val_error=0.000978, accuracy=0.5144
+iter=75, val_error=0.000970, accuracy=0.5333
+iter=80, val_error=0.001001, accuracy=0.4582
+iter=85, val_error=0.000959, accuracy=0.5214
+iter=90, val_error=0.000981, accuracy=0.5221
+iter=95, val_error=0.000987, accuracy=0.5130
+iter=100, val_error=0.001003, accuracy=0.5123
+iter=5, val_error=0.000958, accuracy=0.5347
+iter=10, val_error=0.000992, accuracy=0.4189
+iter=15, val_error=0.000976, accuracy=0.5396
+iter=20, val_error=0.001001, accuracy=0.4323
+iter=25, val_error=0.000972, accuracy=0.4989
+iter=30, val_error=0.000988, accuracy=0.4211
+iter=35, val_error=0.000969, accuracy=0.4891
+iter=40, val_error=0.000963, accuracy=0.5081
+iter=45, val_error=0.000971, accuracy=0.4968
+iter=50, val_error=0.000967, accuracy=0.5186
+iter=55, val_error=0.000971, accuracy=0.5305
+iter=60, val_error=0.000981, accuracy=0.5081
+iter=65, val_error=0.000994, accuracy=0.5235
+iter=70, val_error=0.001013, accuracy=0.4954
+iter=75, val_error=0.001043, accuracy=0.4337
+iter=80, val_error=0.000987, accuracy=0.5277
+iter=85, val_error=0.000980, accuracy=0.5537
+iter=90, val_error=0.000975, accuracy=0.5614
+iter=95, val_error=0.000966, accuracy=0.5249
+iter=100, val_error=0.000983, accuracy=0.5207
+iter=5, val_error=0.001007, accuracy=0.5382
+iter=10, val_error=0.001002, accuracy=0.3972
+iter=15, val_error=0.001026, accuracy=0.4098
+iter=20, val_error=0.001002, accuracy=0.4189
+iter=25, val_error=0.001071, accuracy=0.5298
+iter=30, val_error=0.001065, accuracy=0.5368
+iter=35, val_error=0.001028, accuracy=0.4239
+iter=40, val_error=0.000988, accuracy=0.5347
+iter=45, val_error=0.001139, accuracy=0.4049
+iter=50, val_error=0.001032, accuracy=0.5340
+iter=55, val_error=0.001020, accuracy=0.5312
+iter=60, val_error=0.001023, accuracy=0.4232
+iter=65, val_error=0.000974, accuracy=0.5242
+iter=70, val_error=0.000981, accuracy=0.5249
+iter=75, val_error=0.001068, accuracy=0.4232
+iter=80, val_error=0.000970, accuracy=0.5305
+iter=85, val_error=0.000990, accuracy=0.5235
+iter=90, val_error=0.001112, accuracy=0.4056
+iter=95, val_error=0.000999, accuracy=0.4996
+iter=100, val_error=0.001002, accuracy=0.5179
