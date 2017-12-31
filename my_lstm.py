@@ -39,72 +39,11 @@ def _time_distributed_dense(x, w, b=None, dropout=None,
         x = K.reshape(x, (-1, timesteps, output_dim))
     return x
 
-class My_LSTM(Recurrent):
-    """Long-Short Term Memory unit - Hochreiter 1997.
-
-    For a step-by-step description of the algorithm, see
-    [this tutorial](http://deeplearning.net/tutorial/lstm.html).
-
-    # Arguments
-        units: Positive integer, dimensionality of the output space.
-        activation: Activation function to use
-            (see [activations](../activations.md)).
-            If you don't specify anything, no activation is applied
-            (ie. "linear" activation: `a(x) = x`).
-        recurrent_activation: Activation function to use
-            for the recurrent step
-            (see [activations](../activations.md)).
-        use_bias: Boolean, whether the layer uses a bias vector.
-        kernel_initializer: Initializer for the `kernel` weights matrix,
-            used for the linear transformation of the inputs.
-            (see [initializers](../initializers.md)).
-        recurrent_initializer: Initializer for the `recurrent_kernel`
-            weights matrix,
-            used for the linear transformation of the recurrent state.
-            (see [initializers](../initializers.md)).
-        bias_initializer: Initializer for the bias vector
-            (see [initializers](../initializers.md)).
-        unit_forget_bias: Boolean.
-            If True, add 1 to the bias of the forget gate at initialization.
-            Setting it to true will also force `bias_initializer="zeros"`.
-            This is recommended in [Jozefowicz et al.](http://www.jmlr.org/proceedings/papers/v37/jozefowicz15.pdf)
-        kernel_regularizer: Regularizer function applied to
-            the `kernel` weights matrix
-            (see [regularizer](../regularizers.md)).
-        recurrent_regularizer: Regularizer function applied to
-            the `recurrent_kernel` weights matrix
-            (see [regularizer](../regularizers.md)).
-        bias_regularizer: Regularizer function applied to the bias vector
-            (see [regularizer](../regularizers.md)).
-        activity_regularizer: Regularizer function applied to
-            the output of the layer (its "activation").
-            (see [regularizer](../regularizers.md)).
-        kernel_constraint: Constraint function applied to
-            the `kernel` weights matrix
-            (see [constraints](../constraints.md)).
-        recurrent_constraint: Constraint function applied to
-            the `recurrent_kernel` weights matrix
-            (see [constraints](../constraints.md)).
-        bias_constraint: Constraint function applied to the bias vector
-            (see [constraints](../constraints.md)).
-        dropout: Float between 0 and 1.
-            Fraction of the units to drop for
-            the linear transformation of the inputs.
-        recurrent_dropout: Float between 0 and 1.
-            Fraction of the units to drop for
-            the linear transformation of the recurrent state.
-
-    # References
-        - [Long short-term memory](http://deeplearning.cs.cmu.edu/pdfs/Hochreiter97_lstm.pdf) (original 1997 paper)
-        - [Learning to forget: Continual prediction with LSTM](http://www.mitpressjournals.org/doi/pdf/10.1162/089976600300015015)
-        - [Supervised sequence labeling with recurrent neural networks](http://www.cs.toronto.edu/~graves/preprint.pdf)
-        - [A Theoretically Grounded Application of Dropout in Recurrent Neural Networks](http://arxiv.org/abs/1512.05287)
-    """
+class MulInput_LSTM(Recurrent):
     @interfaces.legacy_recurrent_support
     def __init__(self, units,
                  activation='tanh',
-                 # recurrent_activation='hard_sigmoid',
-                 recurrent_activation='tanh',
+                 recurrent_activation='hard_sigmoid',
                  use_bias=True,
                  kernel_initializer='glorot_uniform',
                  recurrent_initializer='orthogonal',
@@ -120,7 +59,7 @@ class My_LSTM(Recurrent):
                  dropout=0.,
                  recurrent_dropout=0.,
                  **kwargs):
-        super(My_LSTM, self).__init__(**kwargs)
+        super(MulInput_LSTM, self).__init__(**kwargs)
         self.units = units
         self.activation = activations.get(activation)
         self.recurrent_activation = activations.get(recurrent_activation)
@@ -324,5 +263,5 @@ class My_LSTM(Recurrent):
                   'bias_constraint': constraints.serialize(self.bias_constraint),
                   'dropout': self.dropout,
                   'recurrent_dropout': self.recurrent_dropout}
-        base_config = super(My_LSTM, self).get_config()
+        base_config = super(MulInput_LSTM, self).get_config()
         return dict(list(base_config.items()) + list(config.items()))
