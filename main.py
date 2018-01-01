@@ -3,7 +3,7 @@ import dataset.lh_build as build
 from keras.layers.core import *
 from keras.layers.recurrent import LSTM
 from keras.models import *
-from my_lstm import My_LSTM
+from my_lstm import MulInput_LSTM
 
 def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_try = 0, best_error = np.inf):
     x = Input(shape=(ts, dim))
@@ -14,6 +14,7 @@ def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_tr
     model.compile('rmsprop', 'mse')
 
     best_accuracy = 0.0
+    best_iter = 0
 
     # args.nsnapshot denotes how many epochs per weight saving.
     for ii in range(int(niter / nsnapshot)):
@@ -74,7 +75,7 @@ if __name__ == "__main__":
     data_cache = "cache"
     train_split = 0.8
     val_split = 0.9
-    trys = 50
+    trys = 10
 
     # X_target, Y_target, X_pos, Y_pos, X_neg, Y_neg, max_data, min_data, X_hs300, Y_hs300 = build.build_data(src, src_hs300, data_cache, target=0, timesteps=15, k=20, related_ts=30)
     x_train, y_train, x_val, y_val, x_test, y_test, gt_test, max_data, min_data = build.load_data_2(src, src_hs300, 15, True)
