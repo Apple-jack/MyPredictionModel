@@ -96,11 +96,26 @@ class MulInput_LSTM(Recurrent):
         if self.stateful:
             self.reset_states()
 
-        self.kernel = self.add_weight((self.input_dim, self.units * 4),
+        self.series_num = 4     ## we use 4 series: target, positive, negative, hs300
+        ## kernels: kernel_f,
+        ##          kernel_i, kernel_ip, kernel_in, kernel_ihs
+        ##          kernel_c, kernel_cp, kernel_cn, kernel_chs
+        ##          kernel_o
+
+        ## recurrent kernels: recurrent_kernel_f,
+        ##                    recurrent_kernel_i, recurrent_kernel_ip, recurrent_kernel_in, recurrent_kernel_ihs
+        ##                    recurrent_kernel_c, recurrent_kernel_cp, recurrent_kernel_cn, recurrent_kernel_chs
+        ##                    recurrent_kernel_o
+        ## total: 20 kernels
+
+        ## these are the original kernels for LSTM
+        ## total: 8 kernels
+        self.kernel = self.add_weight((int(self.input_dim / 4), self.units * 4),
                                       name='kernel',
                                       initializer=self.kernel_initializer,
                                       regularizer=self.kernel_regularizer,
                                       constraint=self.kernel_constraint)
+
         self.recurrent_kernel = self.add_weight(
             (self.units, self.units * 4),
             name='recurrent_kernel',
@@ -108,6 +123,24 @@ class MulInput_LSTM(Recurrent):
             regularizer=self.recurrent_regularizer,
             constraint=self.recurrent_constraint)
 
+        ## here we use another variable to specify driving series kernel, since they use different initializer
+        ## kernel will be zero at the beginning
+        ## total: 12 kernels
+        # self.kernel_rel = self.add_weight((int(self.input_dim / self.series_num), self.units * 6),
+        #                               name='kernel_related',
+        #                               initializer=initializers.zeros(),
+        #                               regularizer=self.kernel_regularizer,
+        #                               constraint=self.kernel_constraint)
+        #
+        # self.recurrent_kernel_rel = self.add_weight(
+        #     (self.units, self.units * 6),
+        #     name='recurrent_kernel_related',
+        #     initializer=initializers.zeros(),
+        #     regularizer=self.recurrent_regularizer,
+        #     constraint=self.recurrent_constraint)
+
+        ## original 4 bias and 6 related bias
+        ## all bias use the same initializer
         if self.use_bias:
             self.bias = self.add_weight((self.units * 4,),
                                         name='bias',
@@ -121,6 +154,7 @@ class MulInput_LSTM(Recurrent):
         else:
             self.bias = None
 
+        ## original kernels
         self.kernel_i = self.kernel[:, :self.units]
         self.kernel_f = self.kernel[:, self.units: self.units * 2]
         self.kernel_c = self.kernel[:, self.units * 2: self.units * 3]
@@ -131,58 +165,54 @@ class MulInput_LSTM(Recurrent):
         self.recurrent_kernel_c = self.recurrent_kernel[:, self.units * 2: self.units * 3]
         self.recurrent_kernel_o = self.recurrent_kernel[:, self.units * 3:]
 
+        ## related kernels
+        # self.kernel_ip = self.kernel_rel[:, :self.units]
+        # self.kernel_in = self.kernel_rel[:, self.units: self.units * 2]
+        # self.kernel_ihs = self.kernel_rel[:, self.units * 2: self.units * 3]
+        # self.kernel_cp = self.kernel_rel[:, self.units * 3: self.units * 4]
+        # self.kernel_cn = self.kernel_rel[:, self.units * 4: self.units * 5]
+        # self.kernel_chs = self.kernel_rel[:, self.units * 5:]
+        #
+        # self.recurrent_kernel_ip = self.recurrent_kernel_rel[:, :self.units]
+        # self.recurrent_kernel_in = self.recurrent_kernel_rel[:, self.units: self.units * 2]
+        # self.recurrent_kernel_ihs = self.recurrent_kernel_rel[:, self.units * 2: self.units * 3]
+        # self.recurrent_kernel_cp = self.recurrent_kernel_rel[:, self.units * 3: self.units * 4]
+        # self.recurrent_kernel_cn = self.recurrent_kernel_rel[:, self.units * 4: self.units * 5]
+        # self.recurrent_kernel_chs = self.recurrent_kernel_rel[:, self.units * 5:]
+
         if self.use_bias:
+            ## original bias
             self.bias_i = self.bias[:self.units]
             self.bias_f = self.bias[self.units: self.units * 2]
             self.bias_c = self.bias[self.units * 2: self.units * 3]
             self.bias_o = self.bias[self.units * 3:]
+
+            ## related bias
+            # self.bias_ip = self.bias[self.units * 4: self.units * 5]
+            # self.bias_in = self.bias[self.units * 5: self.units * 6]
+            # self.bias_ihs = self.bias[self.units * 6: self.units * 7]
+            # self.bias_cp = self.bias[self.units * 7: self.units * 8]
+            # self.bias_cn = self.bias[self.units * 8: self.units * 9]
+            # self.bias_chs = self.bias[self.units * 9:]
+
         else:
             self.bias_i = None
             self.bias_f = None
             self.bias_c = None
             self.bias_o = None
+            # self.bias_ip = None
+            # self.bias_in = None
+            # self.bias_ihs = None
+            # self.bias_cp = None
+            # self.bias_cn = None
+            # self.bias_chs = None
         self.built = True
-
-    def preprocess_input(self, inputs, training=None):
-        if self.implementation == 0:
-            input_shape = K.int_shape(inputs)
-            input_dim = input_shape[2]
-            timesteps = input_shape[1]
-
-            x_i = _time_distributed_dense(inputs, self.kernel_i, self.bias_i,
-                                          self.dropout, input_dim, self.units,
-                                          timesteps, training=training)
-            x_f = _time_distributed_dense(inputs, self.kernel_f, self.bias_f,
-                                          self.dropout, input_dim, self.units,
-                                          timesteps, training=training)
-            x_c = _time_distributed_dense(inputs, self.kernel_c, self.bias_c,
-                                          self.dropout, input_dim, self.units,
-                                          timesteps, training=training)
-            x_o = _time_distributed_dense(inputs, self.kernel_o, self.bias_o,
-                                          self.dropout, input_dim, self.units,
-                                          timesteps, training=training)
-            return K.concatenate([x_i, x_f, x_c, x_o], axis=2)
-        else:
-            return inputs
 
     def get_constants(self, inputs, training=None):
         constants = []
-        if self.implementation == 0 and 0 < self.dropout < 1:
-            input_shape = K.int_shape(inputs)
-            input_dim = input_shape[-1]
-            ones = K.ones_like(K.reshape(inputs[:, 0, 0], (-1, 1)))
-            ones = K.tile(ones, (1, int(input_dim)))
+        constants.append([K.cast_to_floatx(1.) for _ in range(4)])
 
-            def dropped_inputs():
-                return K.dropout(ones, self.dropout)
-
-            dp_mask = [K.in_train_phase(dropped_inputs,
-                                        ones,
-                                        training=training) for _ in range(4)]
-            constants.append(dp_mask)
-        else:
-            constants.append([K.cast_to_floatx(1.) for _ in range(4)])
-
+        ## add recurrent dropout into constants
         if 0 < self.recurrent_dropout < 1:
             ones = K.ones_like(K.reshape(inputs[:, 0, 0], (-1, 1)))
             ones = K.tile(ones, (1, self.units))
@@ -203,43 +233,26 @@ class MulInput_LSTM(Recurrent):
         dp_mask = states[2]
         rec_dp_mask = states[3]
 
-        if self.implementation == 2:
-            z = K.dot(inputs * dp_mask[0], self.kernel)
-            z += K.dot(h_tm1 * rec_dp_mask[0], self.recurrent_kernel)
-            if self.use_bias:
-                z = K.bias_add(z, self.bias)
+        encode_dim = int(self.input_dim / 4)
 
-            z0 = z[:, :self.units]
-            z1 = z[:, self.units: 2 * self.units]
-            z2 = z[:, 2 * self.units: 3 * self.units]
-            z3 = z[:, 3 * self.units:]
+        input_t = inputs[:, :encode_dim]
+        input_p = inputs[:, encode_dim: encode_dim * 2]
+        input_n = inputs[:, encode_dim * 2: encode_dim * 3]
+        input_hs = inputs[:, encode_dim * 3:]
 
-            i = self.recurrent_activation(z0)
-            f = self.recurrent_activation(z1)
-            c = f * c_tm1 + i * self.activation(z2)
-            o = self.recurrent_activation(z3)
-        else:
-            if self.implementation == 0:
-                x_i = inputs[:, :self.units]
-                x_f = inputs[:, self.units: 2 * self.units]
-                x_c = inputs[:, 2 * self.units: 3 * self.units]
-                x_o = inputs[:, 3 * self.units:]
-            elif self.implementation == 1:
-                x_i = K.dot(inputs * dp_mask[0], self.kernel_i) + self.bias_i
-                x_f = K.dot(inputs * dp_mask[1], self.kernel_f) + self.bias_f
-                x_c = K.dot(inputs * dp_mask[2], self.kernel_c) + self.bias_c
-                x_o = K.dot(inputs * dp_mask[3], self.kernel_o) + self.bias_o
-            else:
-                raise ValueError('Unknown `implementation` mode.')
+        x_i = K.dot(input_t * dp_mask[0], self.kernel_i) + self.bias_i
+        x_f = K.dot(input_t * dp_mask[1], self.kernel_f) + self.bias_f
+        x_c = K.dot(input_t * dp_mask[2], self.kernel_c) + self.bias_c
+        x_o = K.dot(input_t * dp_mask[3], self.kernel_o) + self.bias_o
 
-            i = self.recurrent_activation(x_i + K.dot(h_tm1 * rec_dp_mask[0],
-                                                      self.recurrent_kernel_i))
-            f = self.recurrent_activation(x_f + K.dot(h_tm1 * rec_dp_mask[1],
-                                                      self.recurrent_kernel_f))
-            c = f * c_tm1 + i * self.activation(x_c + K.dot(h_tm1 * rec_dp_mask[2],
-                                                            self.recurrent_kernel_c))
-            o = self.recurrent_activation(x_o + K.dot(h_tm1 * rec_dp_mask[3],
-                                                      self.recurrent_kernel_o))
+        i = self.recurrent_activation(x_i + K.dot(h_tm1 * rec_dp_mask[0],
+                                                  self.recurrent_kernel_i))
+        f = self.recurrent_activation(x_f + K.dot(h_tm1 * rec_dp_mask[1],
+                                                  self.recurrent_kernel_f))
+        c = f * c_tm1 + i * self.activation(x_c + K.dot(h_tm1 * rec_dp_mask[2],
+                                                        self.recurrent_kernel_c))
+        o = self.recurrent_activation(x_o + K.dot(h_tm1 * rec_dp_mask[3],
+                                                  self.recurrent_kernel_o))
         h = o * self.activation(c)
         if 0 < self.dropout + self.recurrent_dropout:
             h._uses_learning_phase = True
