@@ -369,10 +369,12 @@ def cal_pearson(x, y):
     return p
 
 if __name__ == "__main__":
-    directory = "history_data"
+    np.set_printoptions(threshold=np.inf)
+    # directory = "history_data"
     # dm = DataManager(directory)
     # dm.getMatrix(dm.commonFirstDate, dm.commonLastDate)
-    # data = np.load("matrix.npy")
+    data = np.load("matrix.npy")
+    print(data)
     # errors = np.load("errors.npy")
     # data_no_zero = np.load("matrix_no_zero.npy")
     # print(load_hs300())
