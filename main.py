@@ -5,9 +5,9 @@ from keras.layers.recurrent import LSTM
 from keras.models import *
 from my_lstm import MulInput_LSTM
 
-def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_try = 0, best_error = np.inf):
+def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_try = 0, best_error = np.inf, return_sequences=True):
     x = Input(shape=(ts, dim))
-    lstm = LSTM(32, input_shape=(ts, dim), return_sequences=True)(x)
+    lstm = LSTM(32, input_shape=(ts, dim), return_sequences=return_sequences)(x)
     # lstm = LSTM(32, return_sequences=True)(lstm)
     prediction = Dense(1)(lstm)
     model = Model(input=x, output=prediction)
@@ -27,20 +27,31 @@ def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_tr
         num_iter = nsnapshot * (ii + 1)
 
         predicted = model.predict(x_train)
-        train_error = np.sum((predicted[:, -1, 0] - y_train[:, -1, 0]) ** 2) / predicted.shape[0]
-
+        if return_sequences:
+            train_error = np.sum((predicted[:, -1, 0] - y_train[:, -1, 0]) ** 2) / predicted.shape[0]
+        else:
+            train_error = np.sum((predicted.flatten() - y_train.flatten()) ** 2) / predicted.shape[0]
         print('%s train error %f' % (num_iter, train_error))
         print("train sample: %d" % predicted.shape[0])
 
         predicted = model.predict(x_val)
-        val_error = np.sum((predicted[:, -1, 0] - y_val[:, -1, 0]) ** 2) / predicted.shape[0]
+        if return_sequences:
+            val_error = np.sum((predicted[:, -1, 0] - y_val[:, -1, 0]) ** 2) / predicted.shape[0]
+        else:
+            val_error = np.sum((predicted.flatten() - y_val.flatten()) ** 2) / predicted.shape[0]
 
         y_predict = np.array(predicted).flatten()
         y_real= np.array(y_val).flatten()
-        x_real = np.array(x_val).flatten()
+        if return_sequences:
+            x_real = np.array(x_val).flatten()
+        else:
+            x_real = np.array(x_val[:, -1, 0]).flatten()
         delta_predict = y_predict - x_real
         delta_real = y_real - x_real
         p3 = delta_predict * delta_real
+        # print(delta_predict)
+        # print("--------------------------------------------------------")
+        # print(delta_real)
         count = 0
         for x in p3:
             if x > 0:
@@ -104,8 +115,12 @@ if __name__ == "__main__":
     # X_val = X_target[train_border: val_border, :, :]
     # Y_val = Y_target[train_border: val_border, :]
     #
+
+    y_train = y_train[:, -1:, 0]
+    y_val = y_val[:, -1:, 0]
+    print(y_train.shape)
     best_error = np.inf
     for i in range(trys):
         best_error = exp_LSTM(niter=50, nsnapshot=1, ts=15, x_train=x_train, y_train=y_train, x_val=x_val, y_val=y_val,
-                             dim=x_train.shape[2], exp_try=i, best_error=best_error)
+                             dim=x_train.shape[2], exp_try=i, best_error=best_error, return_sequences=False)
 
