@@ -3,61 +3,58 @@ import numpy as np
 from keras.layers.core import *
 from keras.layers.recurrent import LSTM
 from keras.models import *
-from keras import backend as K
-from keras.engine.topology import Layer
-from keras.initializers import ones
-from keras.constraints import min_max_norm
+from keras.layers import Average, Concatenate
+from my_lstm import MulInput_LSTM
 
 import dataset.lh_build as build
 
-class Filter(Layer):
+def encoder_lstm(ts = 15, lstm_dim=32):
+    seq = Sequential()
+    seq.add(LSTM(lstm_dim, input_shape=(ts, 1), return_sequences=True))
+    return seq
 
-    def __init__(self, encode_dim, output_dim, **kwargs):
-        self.encode_dim = encode_dim
-        self.output_dim = output_dim
-        super(Filter, self).__init__(**kwargs)
+def Proposed_Model(k, ts=15, lstm_dim=32):
+    x_target = Input(shape=(ts, 1))
+    x_hs300 = Input(shape=(ts, 1))
+    x_pos = list()
+    x_pos_out = list()
+    x_neg = list()
+    x_neg_out = list()
+    encoder = encoder_lstm(ts=ts, lstm_dim=lstm_dim)
 
-    def build(self, input_shape):
-        self.kernel = self.add_weight(name='kernel',
-                                      shape=(1, self.encode_dim),
-                                      initializer=ones(),
-                                      constraint=min_max_norm(min_value=0.0, max_value=1.0000000001, rate=1.0, axis=0),
-                                      trainable=True)
-        super(Filter, self).build(input_shape)
+    ## positive and negative inputs
+    for i in range(k):
+        in_temp = Input(shape=(ts, 1))
+        x_pos.append(in_temp)  ## shape=(batch, ts, 1)
+        in_temp = Input(shape=(ts, 1))
+        x_neg.append(in_temp)  ## shape=(batch, ts, 1)
+    ## target and hs300 index encode outputs
+    x_target_out = encoder(x_target)  ## shape=(batch, ts, dim)
+    x_hs300_out = encoder(x_target)  ## shape=(batch, ts, dim)
+    ## positive and negative encode outputs
+    for i in range(k):
+        x_pos_out.append(encoder(x_pos[i]))  ## shape=(batch, ts, dim)
+        x_neg_out.append(encoder(x_neg[i]))  ## shape=(batch, ts, dim)
+    ## auxilary output for target prediction
+    aux_out = LSTM(lstm_dim, return_sequences=False)(x_target_out)
+    aux_out = Dense(1)(aux_out)
+    ## concatenate positive and nagative series
+    ## here use a naive average function to concatenate, edit Average layer source code to implement attention
+    x_pos_avg = Average()(x_pos_out)  ## shape=(batch, ts, dim)
+    x_neg_avg = Average()(x_neg_out)  ## shape=(batch, ts, dim)
+    ## concatenate the inputs to fit MulInput_LSTM input shape
+    mul_LSTM_in = Concatenate(axis=2)([x_target_out, x_pos_avg, x_neg_avg, x_hs300_out])
+    main_out = MulInput_LSTM(lstm_dim, return_sequences=False)(mul_LSTM_in)
+    main_out = Dense(1)(main_out)
 
-    def call(self, inputs):
-        target = inputs[:, :self.encode_dim]
-        driving = inputs[:, self.encode_dim:]
-
-        target = target * self.kernel
-        f = self.kernel
-        driving = driving * (1 - f)
-        o = K.concatenate((target, driving), axis=1)
-        return o
-
-    def compute_output_shape(self, input_shape):
-        return (input_shape[0], self.output_dim)
-
+    all_input_list = list()
+    all_input_list.append(x_target)
+    all_input_list += x_pos
+    all_input_list += x_neg
+    all_input_list.append(x_hs300)
+    model = Model(inputs=tuple(all_input_list), outputs=(aux_out, main_out))
+    model.compile('rmsprop', 'mse')
+    return  model
 
 if __name__ == "__main__":
     encode_dim = 1
-    output_dim = 2
-
-    x_in = np.random.standard_normal(size=(100, 2))
-    y_out = np.random.standard_normal(size=(100, 1))
-    y_out = x_in[:, 1]
-
-    x = Input(shape=(encode_dim * 2,))
-    fil = Filter(encode_dim=encode_dim, output_dim=output_dim)(x)
-    out = Dense(1)(fil)
-    model = Model(inputs=x, outputs=(out,fil))
-    model.load_weights("wwwww.hdf5")
-    print(model.predict(np.array([[1, 1]])))
-    # model.compile('rmsprop', 'mse')
-    # model.fit(x_in, y_out, epochs=5000)
-    #
-    # result = model.predict(x_in)
-    # print(result - y_out)
-    # model.save_weights("wwwww.hdf5")
-
-

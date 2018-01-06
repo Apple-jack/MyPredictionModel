@@ -2,15 +2,10 @@ import numpy as np
 import dataset.lh_build as build
 from keras.layers.core import *
 from keras.layers.recurrent import LSTM
-from keras.layers import Average
+from keras.layers import Average, Concatenate
 from keras.models import *
 from my_lstm import MulInput_LSTM
-import pandas as pd
-
-def encoder_lstm(ts = 15, hidden_dim=32):
-    seq = Sequential()
-    seq.add(LSTM(hidden_dim, input_shape=(ts, 1), return_sequences=True))
-    return seq
+from lh_model import Proposed_Model
 
 if __name__ == "__main__":
     ts = 15
@@ -25,56 +20,70 @@ if __name__ == "__main__":
                                                                                                             k=10,
                                                                                                             related_ts=15)
     k = 10
-
+    Y_target = Y_target[:, -1:, 0]
     X_pos = X_pos.transpose(0, 2, 1)
     X_neg = X_neg.transpose(0, 2, 1)
-    print(X_target.shape)
-    print(Y_target.shape)
-    print(X_pos.shape)
-    print(X_hs300.shape)
-
-    x_pos = list()
-
-
-    x_target = Input(shape=(ts, 1))
-    x_hs300 = Input(shape=(ts, 1))
-    x_pos = list()
-    x_pos_out = list()
-    x_neg = list()
-    x_neg_out = list()
-    encoder = encoder_lstm()
-
-    ## positive and negative inputs
-    for i in range(k):
-        in_temp = Input(shape=(ts, 1))
-        x_pos.append(in_temp)                 ## shape=(batch, ts, 1)
-        in_temp = Input(shape=(ts, 1))
-        x_neg.append(in_temp)                 ## shape=(batch, ts, 1)
-    ## target and hs300 index encode outputs
-    x_target_out = encoder(x_target)          ## shape=(batch, ts, dim)
-    x_hs300_out = encoder(x_target)           ## shape=(batch, ts, dim)
-    ## positive and negative encode outputs
-    for i in range(k):
-        x_pos_out.append(encoder(x_pos[i]))   ## shape=(batch, ts, dim)
-        x_neg_out.append(encoder(x_neg[i]))   ## shape=(batch, ts, dim)
-    ## auxilary output for target prediction
-    aux_out = LSTM(32, return_sequences=False)(x_target_out)
-    aux_out = Dense(1)(aux_out)
-    ## concatenate positive and nagative series
-    ## here use a naive average function to concatenate, edit Average layer source code to implement attention
-    x_pos_avg = Average()(x_pos_out)          ## shape=(batch, ts, dim)
-    x_neg_avg = Average()(x_neg_out)          ## shape=(batch, ts, dim)
-    ## use a Average layer to pretend MulInput_LSTM
-    x_fake = Average()([x_target_out, x_pos_avg, x_neg_avg, x_hs300_out])
-    main_out = LSTM(32, return_sequences=False)(x_fake)
-    main_out = Dense(1)(main_out)
-
     all_input_list = list()
-    all_input_list.append(x_target)
-    all_input_list += x_pos
-    all_input_list += x_neg
-    all_input_list.append(x_hs300)
-    model = Model(inputs=tuple(all_input_list), outputs=(aux_out, main_out))
-    model.compile('rmsprop', 'mse')
+    all_input_list_val = list()
+    all_input_list.append(X_target[:750, :, :])
+    all_input_list_val.append((X_target[750:, :, :]))
+    for i in range(k):
+        all_input_list.append(X_pos[:750, :, i: i + 1])
+        all_input_list_val.append(X_pos[750:, :, i: i + 1])
+    for i in range(k):
+        all_input_list.append(X_neg[:750, :, i: i + 1])
+        all_input_list_val.append(X_neg[750:, :, i: i + 1])
+    all_input_list.append(X_hs300[:750, :, :])
+    all_input_list_val.append(X_hs300[750:, :, :])
 
-    model.fit()
+    model = Proposed_Model(k)
+
+
+    best_accuracy = 0.0
+    best_iter = 0
+    niter = 1000
+    nsnapshot = 5
+    best_error = np.inf
+    # args.nsnapshot denotes how many epochs per weight saving.
+    for ii in range(int(niter / nsnapshot)):
+        model.fit(all_input_list, [Y_target[:750, :], Y_target[:750, :]], batch_size=128, epochs=nsnapshot)
+
+
+        num_iter = nsnapshot * (ii + 1)
+
+        [ap, predicted] = model.predict(all_input_list)
+        train_error = np.sum((predicted.flatten() - Y_target[:750, :].flatten()) ** 2) / predicted.shape[0]
+        print('%s train error %f' % (num_iter, train_error))
+        print("train sample: %d" % predicted.shape[0])
+
+        [ap, predicted] = model.predict(all_input_list_val)
+        val_error = np.sum((predicted.flatten() - Y_target[750:, :].flatten()) ** 2) / predicted.shape[0]
+
+        y_predict = np.array(predicted).flatten()
+        y_real = np.array(Y_target[750:, :]).flatten()
+        x_real = np.array(X_target[750:, -1, 0]).flatten()
+
+        delta_predict = y_predict - x_real
+        delta_real = y_real - x_real
+        p3 = delta_predict * delta_real
+        # print(delta_predict)
+        # print("--------------------------------------------------------")
+        # print(delta_real)
+        count = 0
+        for x in p3:
+            if x > 0:
+                count += 1
+        accuracy = count / p3.shape[0]
+
+        print('val error %f' % val_error)
+        print('accuracy %.4f' % accuracy)
+        print("val sample: %d" % predicted.shape[0])
+
+        if (val_error < best_error):
+            best_error = val_error
+            best_accuracy = accuracy
+            best_iter = nsnapshot * (ii + 1)
+
+    print('best iteration %d' % best_iter)
+    print('smallest error %f' % best_error)
+    print('best accuracy %.4f' % best_accuracy)

@@ -5,6 +5,7 @@ from keras.layers.recurrent import LSTM
 from keras.models import *
 from my_lstm import MulInput_LSTM
 
+
 def exp_LSTM(niter, nsnapshot, ts, x_train, y_train, x_val, y_val, dim=1, exp_try = 0, best_error = np.inf, return_sequences=True):
     x = Input(shape=(ts, dim))
     lstm = LSTM(32, input_shape=(ts, dim), return_sequences=return_sequences)(x)

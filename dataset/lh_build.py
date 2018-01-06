@@ -194,17 +194,37 @@ def build_data(src, src_hs300, cache_src, target, timesteps, k, related_ts):
     X_hs300 = np.zeros(shape=(n_samples, related_ts))
     Y_hs300 = np.zeros(shape=(n_samples, related_ts))
 
-    for i in range(X_target_seg.shape[0] - related_ts + 1):
+    for i in range(n_samples):
         ## let time window slices on the total timesteps
+        ## first skip samples which contain zeor value
+        if 0 in X_target_seg[i: i + related_ts] or 0 in Y_target_seg[i: i + related_ts]:
+            continue
         X_target[i] = X_target_seg[i: i + related_ts]       ## shape=(related_ts,)
         Y_target[i] = Y_target_seg[i: i + related_ts]
+
         XY_driving[i] = XY_driving_seg[:, i: i + related_ts + 1]
+        ## ***** allow XY_driving to have zero values, solve this problem in get_pearson_related_data()
         X_pos[i], X_neg[i], Y_pos[i], Y_neg[i] = get_pearson_related_data(X_target[i], XY_driving[i], k)
         X_hs300[i] = X_hs300_seg[i: i + related_ts]
         Y_hs300[i] = Y_hs300_seg[i: i + related_ts]
         ## calculate the difference
         # Y_target[i] = Y_target[i] - X_target[i]
         # Y_hs300[i] = Y_hs300[i] - X_hs300[i]
+
+    ## ***** notice since X_target are initialized with zeros, zero samples should be discarded
+    zero_index = list()
+    for i in range(n_samples):
+        if 0 in X_target[i]:
+            zero_index.append(i)
+
+    X_target = np.delete(X_target, zero_index, axis=0)
+    Y_target = np.delete(Y_target, zero_index, axis=0)
+    X_pos = np.delete(X_pos, zero_index, axis=0)
+    Y_pos = np.delete(Y_pos, zero_index, axis=0)
+    X_neg = np.delete(X_neg, zero_index, axis=0)
+    Y_neg = np.delete(Y_neg, zero_index, axis=0)
+    X_hs300 = np.delete(X_hs300, zero_index, axis=0)
+    Y_hs300 = np.delete(Y_hs300, zero_index, axis=0)
 
     X_target = np.reshape(X_target, newshape=(X_target.shape[0], X_target.shape[1], 1))
     Y_target = np.reshape(Y_target, newshape=(Y_target.shape[0], Y_target.shape[1], 1))
@@ -221,95 +241,34 @@ def build_data(src, src_hs300, cache_src, target, timesteps, k, related_ts):
     np.save(cache_hs300x, X_hs300[:, -timesteps:])
     np.save(cache_hs300y, Y_hs300[:, -timesteps:])
 
-
     return X_target[:, -timesteps:], Y_target[:, -timesteps:], X_pos[:, :, -timesteps:], Y_pos[:, :, -timesteps:], X_neg[:, :, -timesteps:], \
            Y_neg[:, :, -timesteps:], max_data, min_data, X_hs300[:, -timesteps:], Y_hs300[:, -timesteps:]
 
-def load_data_2(src, src_hs300, timestep, return_sequence):
-    data = np.load(src)
-    data_hs300 = np.load(src_hs300)
-    data = np.concatenate((data, data_hs300), axis=0)
-    data_real = data[:, :]
-    data = data[:, :]
-
-    # # data normalization
-    max_data = np.max(data, axis=1)
-    min_data = np.min(data, axis=1)
-    max_data = np.reshape(max_data, (max_data.shape[0], 1))
-    min_data = np.reshape(min_data, (min_data.shape[0], 1))
-    data = (2 * data - (max_data + min_data)) / (max_data - min_data)
-
-    # dataset split
-    train_split = round(0.8 * data.shape[1])
-    val_split = round(0.9 * data.shape[1])
-
-    x_train_seg = data[:, : train_split]
-    y_train_seg = data[:, 1: train_split + 1]
-    x_val_seg = data[:, train_split: val_split]
-    y_val_seg = data[:, train_split + 1: val_split + 1]
-    x_test_seg = data[:, val_split: -1]
-    y_test_seg = data[:, val_split + 1:]
-    gt_test_seg = data_real[:, val_split + 1:]
-
-    n_train = (x_train_seg.shape[1] - timestep + 1) * x_train_seg.shape[0]
-    n_val = (x_val_seg.shape[1] - timestep + 1) * x_val_seg.shape[0]
-    n_test = (x_test_seg.shape[1] - timestep + 1) * x_test_seg.shape[0]
-    #LSTM
-    x_train = np.zeros(shape=(n_train, timestep))
-    y_train = np.zeros(shape=(n_train, timestep))
-    x_val = np.zeros(shape=(n_val, timestep))
-    y_val = np.zeros(shape=(n_val, timestep))
-    x_test = np.zeros(shape=(n_test, timestep))
-    y_test = np.zeros(shape=(n_test, timestep))
-    gt_test = np.zeros(shape=(n_test, timestep))
-
-    i = 0
-    for j in range(x_train_seg.shape[0]):
-        for k in range(x_train_seg.shape[1] - timestep + 1):
-            x_train[i, :] = x_train_seg[j, k: k + timestep]
-            y_train[i, :] = y_train_seg[j, k: k + timestep]
-            i += 1
-    assert i == n_train
-
-    i = 0
-    for j in range(x_val_seg.shape[0]):
-        for k in range(x_val_seg.shape[1] - timestep + 1):
-            x_val[i, :] = x_val_seg[j, k: k + timestep]
-            y_val[i, :] = y_val_seg[j, k: k + timestep]
-            i += 1
-    assert i == n_val
-
-    i = 0
-    for j in range(x_test_seg.shape[0]):
-        for k in range(x_test_seg.shape[1] - timestep + 1):
-            x_test[i, :] = x_test_seg[j, k: k + timestep]
-            y_test[i, :] = y_test_seg[j, k: k + timestep]
-            gt_test[i, :] = gt_test_seg[j, k: k + timestep]
-            i += 1
-    assert i == n_test
-
-    x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
-    x_val = np.reshape(x_val, (x_val.shape[0], x_val.shape[1], 1))
-    x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
-
-    y_train = np.reshape(y_train, (y_train.shape[0], y_train.shape[1], 1))
-    y_val = np.reshape(y_val, (y_val.shape[0], y_val.shape[1], 1))
-    y_test = np.reshape(y_test, (y_test.shape[0], y_test.shape[1], 1))
-    gt_test = np.reshape(gt_test, (gt_test.shape[0], gt_test.shape[1], 1))
-
-    if return_sequence:
-        return [x_train, y_train, x_val, y_val, x_test, y_test, gt_test, max_data, min_data]
-    else:
-        return [x_train, y_train[:, -1], x_val, y_val[:, -1], x_test, y_test[:, -1], gt_test[:, -1], max_data, min_data]
+def min_except_zero(data):
+    ## calculates min data of each line except 0, and returns a mask which flags whether a value in data equals 0.
+    _data = data
+    max = np.max(data, axis=1)
+    mask = np.zeros_like(data)
+    for i in range(data.shape[0]):
+        for j in range(data.shape[1]):
+            if(data[i, j] != 0):
+                mask[i, j] = 1
+            else:
+                _data[i, j] = max[i] - 0.5
+    min = np.min(_data, axis=1)
+    return min, mask
 
 def data_normalization(data):
     ## rescale every row in data to [-1, 1]
+    ## notice that some of the stock data contains 0, when calculating min value zeros should be ignored.
+    ## since stock value is always larger than 0, so np.max can be used directly.
     max_data = np.max(data, axis=1)
-    min_data = np.min(data, axis=1)
+    # min_data = np.min(data, axis=1)
+    min_data, mask = min_except_zero(data)
     max_data = np.reshape(max_data, (max_data.shape[0], 1))
     min_data = np.reshape(min_data, (min_data.shape[0], 1))
     data_norm = (2 * data - (max_data + min_data)) / (max_data - min_data)
-
+    data_norm *= mask
     return data_norm, max_data, min_data
 
 def data_restore(data_norm, max_data, min_data):
@@ -323,10 +282,12 @@ def get_pearson_related_data(x_target, xy_driving, top_k):
     ## x_driving: all other driving series in the same time window of x_target (N, timesteps)
     ## top_k: the top_k driving series with the largest and smallest pcc in the driving series will be selected
     ## as X_pos and X_neg
+    ## ***** notice that xy_driving could have zero values, series with zero should be excluded
     x_driving = xy_driving[:, : -1]
     y_driving = xy_driving[:, 1:]
     pcc = np.zeros(shape=x_driving.shape[0])
     for i in range(x_driving.shape[0]):
+        ## haha, zero values still wouldn't be solved in this function, it would be solved in cal_pearson()
         pcc[i] = cal_pearson(x_target, x_driving[i])
     pcc_index = pcc.argsort()
     pos_index = pcc_index[-top_k:]
@@ -351,6 +312,11 @@ def get_pearson_related_data(x_target, xy_driving, top_k):
 
 def cal_pearson(x, y):
     ## basic pearson calculate function, x and y are both vectors
+    ## ***** solve zero value problem here. if either x or y contains zero, this function returns 0, which means
+    ## this 2 series are totally irrelevant thus the candidate series won't be selected as related series of
+    ## target series.
+    if 0 in x or 0 in y:
+        return 0
     x_mean = np.mean(x)
     y_mean = np.mean(y)
     n = len(x)
@@ -368,35 +334,26 @@ def cal_pearson(x, y):
     p = sumTop / sumBottom
     return p
 
+def cache_gen():
+    src = "matrix.npy"
+    src_hs300 = "hs300.npy"
+    data_cache = "../cache"
+    for i in range(263):
+        build_data(src,
+                   src_hs300,
+                   data_cache,
+                   target=i,
+                   timesteps=15,
+                   k=10,
+                   related_ts=15)
+        print("finish: %d"%i)
+
 if __name__ == "__main__":
     np.set_printoptions(threshold=np.inf)
     # directory = "history_data"
     # dm = DataManager(directory)
     # dm.getMatrix(dm.commonFirstDate, dm.commonLastDate)
-    data = np.load("matrix.npy")
-    print(data)
-    # errors = np.load("errors.npy")
-    # data_no_zero = np.load("matrix_no_zero.npy")
-    # print(load_hs300())
+    # data = np.load("matrix.npy")      ## we have 263 stocks
     # print(data.shape)
-    # print(len(errors))
-    # count = 0
-    # total = 0
-    #################
-    ## this section receives matrix.npy in variable "data" and outputs matrix_no_zero.npy
-    # i = 0
-    # N = data.shape[0]
-    # while total < N:
-    #     if 0 in data[i]:
-    #         data = np.delete(data, i, axis=0)
-    #         count += 1
-    #         i -= 1
-    #     total += 1
-    #     print(total)
-    #     i += 1
-    #
-    # print("%d / %d" % (count, total))
-    #
-    # print(data.shape)
-    # np.save("matrix_no_zero.npy", data)
-    ################
+
+    cache_gen()
