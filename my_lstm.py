@@ -143,7 +143,7 @@ class MulInput_LSTM(Recurrent):
 
         ## attention kernel
         self.attention_kernel = self.add_weight(
-            (self.units, 1),
+            (self.units, self.units),
             name='attention_kernel',
             initializer=self.kernel_initializer,
             regularizer=self.kernel_regularizer,
@@ -282,10 +282,17 @@ class MulInput_LSTM(Recurrent):
         c_hs = i_hs * self.activation(x_chs + K.dot(h_tm1, self.recurrent_kernel_chs))           ## hs index c
 
         ## attention on each c value
-        a_t = self.recurrent_activation(K.dot(c_t, self.attention_kernel))
-        a_p = self.recurrent_activation(K.dot(c_p, self.attention_kernel))
-        a_n = self.recurrent_activation(K.dot(c_n, self.attention_kernel))
-        a_hs = self.recurrent_activation(K.dot(c_hs, self.attention_kernel))
+        a_t = K.dot(c_t, self.attention_kernel)
+        a_t = K.sum(a_t * c_tm1, axis=1, keepdims=True)
+
+        a_p = K.dot(c_p, self.attention_kernel)
+        a_p = K.sum(a_p * c_tm1, axis=1, keepdims=True)
+
+        a_n = K.dot(c_n, self.attention_kernel)
+        a_n = K.sum(a_n * c_tm1, axis=1, keepdims=True)
+
+        a_hs = K.dot(c_hs, self.attention_kernel)
+        a_hs = K.sum(a_hs * c_tm1, axis=1, keepdims=True)
         alpha = activations.softmax(K.concatenate((a_t, a_p, a_n, a_hs), axis=1))
         ## combine each c value
         c_update = alpha[:, 0: 1] * c_t + alpha[:, 1: 2] * c_p + alpha[:, 2: 3] * c_n + alpha[:, 3: 4] * c_hs
